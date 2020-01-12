@@ -1,3 +1,23 @@
 // Place all the styles related to the Statics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.toppage {
+  &_contents {
+    margin-top: 50px;
+  }
+  &_title {
+    margin-top: 20px;
+  }
+  &_sub_contents {
+    margin-top: 20px;
+    &_btn {
+      display: block;
+      max-width: 400px;
+      margin: 0 auto;
+      border-radius: 30px;
+      background: #29b7f0;
+      color: white;
+    }
+  }
+}
