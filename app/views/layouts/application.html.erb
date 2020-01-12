@@ -9,6 +9,53 @@
   </head>
 
   <body>
+    <%# ナビゲーション %>
+    <header class="navbar navbar-custom">
+      <div class="container">
+        <h3 class="logo">
+          <%= link_to "LivingAlone", root_path %>
+        </h3>
+
+        <%# ログイン時 %>
+        <% if user_signed_in? %>
+        <nav>
+          <ul class="nav navbar-expend-lg navbar-right">
+            <li>
+              <%= link_to "借りたい方", statics_borrow_path %>
+            </li>
+            <li>
+              <%= link_to "貸したい方", statics_lend_path %>
+            </li>
+            <li>
+              <%= link_to "住まいを探す", houses_path %>
+            </li>
+            <li>
+              <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+            </li>
+          </ul>
+        </nav>
+
+        <%# 非ログイン時 %>
+        <% else %>
+        <nav>
+          <ul class="nav navbar-expand-lg navbar-right">
+            <li>
+              <%= link_to "ABOUT", statics_about_path %>
+            </li>
+            <li>
+              <%= link_to "住まいを探す", houses_path %>
+            </li>
+            <li>
+              <%= link_to "新規登録", new_user_registration_path %>
+            </li>
+            <li>
+              <%= link_to "ログイン", new_user_session_path %>
+            </li>
+          </ul>
+        </nav>
+        <% end %>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>

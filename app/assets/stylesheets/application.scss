@@ -19,3 +19,44 @@
 
 // 各ページ
 @import "statics";
+
+//リセットCSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//clearfix
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.navbar {
+  background-color: gray;
+}
+
+.logo > a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+li {
+  width: 120px;
+  text-align: center;
+  background-color: #333;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 2px;
+}
+li > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}

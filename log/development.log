@@ -1520,3 +1520,876 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 541ms (Views: 538.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 10.0.2.2 at 2020-01-12 15:47:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 4057ms (Views: 4027.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 15:51:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 562ms (Views: 540.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 15:52:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5853ms (Views: 5829.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 15:55:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 537ms (Views: 513.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 15:55:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 494ms (Views: 471.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 15:56:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 389ms (Views: 368.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:02:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/vagrant/LivingAlone/app/views/layouts/application.html.erb:30: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+          ^~~~~~
+/vagrant/LivingAlone/app/views/layouts/application.html.erb:32: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:30: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/layouts/application.html.erb:32: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:03:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 556ms (Views: 530.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:04:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 514ms (Views: 487.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:17:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4177ms (Views: 4145.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:22:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 560ms (Views: 529.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:23:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 661ms (Views: 635.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:23:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 621ms (Views: 589.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:24:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 597ms (Views: 570.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:24:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 2641ms (Views: 2610.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:27:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 583ms (Views: 561.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:29:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 583ms (Views: 564.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics/about" for 10.0.2.2 at 2020-01-12 16:29:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#about as HTML
+  Rendering statics/about.html.erb within layouts/application
+  Rendered statics/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 596ms (Views: 572.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-12 16:29:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  Rendered houses/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 434ms (Views: 412.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:30:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 497ms (Views: 474.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:34:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 629ms (Views: 606.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:40:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 568ms (Views: 547.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:41:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 414ms (Views: 392.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:41:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 424ms (Views: 402.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:41:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6783ms (Views: 6758.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:43:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 570ms (Views: 549.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:44:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3356ms (Views: 3334.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:45:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3345ms (Views: 3322.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:45:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3182ms (Views: 3155.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:46:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3176ms (Views: 3153.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:46:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3388ms (Views: 3366.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:47:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3303ms (Views: 3277.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:52:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 635ms (Views: 608.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:53:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 694ms (Views: 653.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:54:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 960ms (Views: 872.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 16:55:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3723ms (Views: 3694.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:01:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 647ms (Views: 622.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:02:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3315ms (Views: 3291.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:04:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 452ms (Views: 429.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:04:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 521ms (Views: 494.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:05:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3377ms (Views: 3357.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:07:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 578ms (Views: 552.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:08:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3390ms (Views: 3365.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:09:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3200ms (Views: 3173.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:09:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3379ms (Views: 3355.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:09:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 652ms (Views: 630.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:10:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 580ms (Views: 550.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:10:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 613ms (Views: 587.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:14:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3286ms (Views: 3261.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:14:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3424ms (Views: 3402.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:14:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3191ms (Views: 3168.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:15:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3383ms (Views: 3362.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:16:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3269ms (Views: 3248.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:18:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3327ms (Views: 3299.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:18:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3133ms (Views: 3112.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:19:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3077ms (Views: 3053.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:19:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3130ms (Views: 3105.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:21:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3675ms (Views: 3645.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:22:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3188ms (Views: 3165.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:22:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3016ms (Views: 2992.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:22:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3700ms (Views: 3663.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:22:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3152ms (Views: 3123.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:23:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3224ms (Views: 3202.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:24:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3201ms (Views: 3176.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:24:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3044ms (Views: 3020.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:25:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3218ms (Views: 3194.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:27:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3083ms (Views: 3059.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:30:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3056ms (Views: 3032.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:30:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3240ms (Views: 3216.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:32:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 623ms (Views: 597.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:32:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5639ms (Views: 5607.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:33:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 821ms (Views: 792.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:34:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6299ms (Views: 6271.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:34:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3464ms (Views: 3444.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:35:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3720ms (Views: 3693.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:35:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 646ms (Views: 623.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:36:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 687ms (Views: 663.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:37:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3438ms (Views: 3409.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:38:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3425ms (Views: 3394.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:38:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3708ms (Views: 3681.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:39:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3467ms (Views: 3442.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:40:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 690ms (Views: 664.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:42:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3150ms (Views: 3128.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:42:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 10997ms (Views: 10942.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:43:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3295ms (Views: 3270.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:44:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3222ms (Views: 3196.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:45:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3206ms (Views: 3184.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:45:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3265ms (Views: 3242.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:46:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3167ms (Views: 3144.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:46:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3283ms (Views: 3258.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:48:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3227ms (Views: 3205.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:49:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3298ms (Views: 3274.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:49:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3419ms (Views: 3394.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:50:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3072ms (Views: 3046.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:51:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3426ms (Views: 3403.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:52:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3315ms (Views: 3291.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:52:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3340ms (Views: 3312.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:53:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3550ms (Views: 3528.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:53:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3151ms (Views: 3126.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:54:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 621ms (Views: 598.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 17:57:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 583ms (Views: 555.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-01-12 17:57:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.0ms)
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (76.5ms)
+Completed 200 OK in 648ms (Views: 621.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-12 17:57:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  Rendered houses/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 461ms (Views: 438.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics/about" for 10.0.2.2 at 2020-01-12 17:58:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#about as HTML
+  Rendering statics/about.html.erb within layouts/application
+  Rendered statics/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 458ms (Views: 433.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-12 18:01:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4982ms (Views: 4953.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-01-12 18:02:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 511ms (Views: 484.0ms | ActiveRecord: 7.0ms)
+
+
