@@ -21,6 +21,7 @@
 @import "statics";
 @import "devise";
 
+
 //リセットCSS
 * {
   margin: 0;
@@ -34,6 +35,8 @@
   clear: both;
 }
 
+
+// header
 .navbar {
   background-color: gray;
 }
@@ -60,4 +63,15 @@ li > a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+
+
+// footer
+footer {
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  text-align: center;
+}
+.button {
+  margin-top: 20px;
 }
