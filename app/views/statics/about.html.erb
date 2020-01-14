@@ -1,2 +1,32 @@
-<h1>Statics#about</h1>
-<p>Find me in app/views/statics/about.html.erb</p>
+<section class="aboutpage">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="aboutpage_title text-white">LivingAloneとは？</h2>
+        <hr class="divider light my-4">
+        <p class="text-white-50 mb-4">
+          1人暮らしをしたいけれどどんなオーナーさんなのか不安...<br>
+          1人暮らし用の物件を貸したいけれどどんな方が入居してくるのか不安...<br>
+          LivingAloneでは、そういった不安を和らげるために相手の性格を知るところから始めることができます。
+          気に入った相手とやり取りを重ね、相手との信頼関係を築いた上での契約。<br>
+          新しい形の1人暮らし専用マッチングアプリ、「LivingAlone」で素敵な相手を見つけてみませんか？<br><br>
+          ※❶本アプリで契約自体はできません。契約は個人間でお願いします。<br>
+          ※❷お急ぎで物件をお探しの方、契約をお急ぎの方のご利用はご遠慮下さい。
+        </p>
+        <hr class="divider light my-4">
+        <h4 class="aboutpage_registration">まだ会員登録をしていない方はこちら<br>
+          <i class="fas fa-arrow-down"></i>
+        </h4>
+        <h3>
+          <%= link_to "会員登録する！", new_user_registration_path, class: "btn aboutpage_btn" %>
+        </h3>
+        <h4 class="aboutpage_session">既に会員登録がお済みの方はこちら<br>
+          <i class="fas fa-arrow-down"></i>
+        </h4>
+        <h3>
+          <%= link_to "ログインする！", new_user_session_path, class: "btn aboutpage_btn1" %>
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>

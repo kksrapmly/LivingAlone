@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+// statics/top
 .toppage {
   &_contents {
     margin-top: 50px;
@@ -19,5 +21,40 @@
       background: #29b7f0;
       color: white;
     }
+  }
+}
+
+// statics/about
+.aboutpage {
+  background-color: #f07c10;
+  &_title {
+    margin-top: 100px;
+    text-align: center;
+  }
+  &_registration {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+  }
+  &_session {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+  }
+  &_btn {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background: #29b7f0;
+    color: white;
+  }
+  &_btn1 {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background: #33e905;
+    color: white;
   }
 }
