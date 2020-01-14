@@ -1,29 +1,84 @@
-<h2>Sign up</h2>
+<section class="signuppage">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <h2 class="signuppage_title">新規登録</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+        <div class="form-body">
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+            <div class="field">
+              <%= f.text_field :name, autofocus: true,　autocomplete: "name", class: "form-control", placeholder: "名前(ニックネーム可)" %>
+            </div>
+
+            <div class="field">
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  <%= f.radio_button :which, "借りる", class: "form-check-input", id: "whichRadio1" %>
+                  <label class="form-check-label" for="whichRadio1">借りる</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <%= f.radio_button :which, "貸したい", class: "form-check-input", id: "whichRadio2" %>
+                  <label class="form-check-label" for="whichRadio2">貸したい</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  <%= f.radio_button :sex, "男", class: "form-check-input", id: "sexRadio1" %>
+                  <label class="form-check-label" for="sexRadio1">男</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <%= f.radio_button :sex, "女", class: "form-check-input", id: "sexRadio2" %>
+                  <label class="form-check-label" for="sexRadio2">女</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <%= f.select :prefecture, User.prefectures.keys, {}, class: "form-control btn btn-info" %>
+            </div>
+
+            <div class="field">
+              <label for="file_photo" class="rounded-circle userProfileImg">
+                <div class="userProfileImg_description">プロフィール画像</div>
+                <i class="fas fa-camera fa-3x"></i>
+                <%= f.file_field :user_image, id: "file_photo", style: "display: none;" %>
+              </label>
+            </div>
+
+            <div class="field">
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "メールアドレス" %>
+            </div>
+
+            <div class="field">
+              <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "パスワード（６文字以上）" %>
+            </div>
+
+            <div class="field">
+              <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "パスワード（確認）" %>
+            </div>
+
+            <div class="field">
+              <%= f.text_area :introduction, maxlength: "500", rows: "10", class: "form-control", placeholder: "自己紹介（１０文字以上５００文字以内）" %>
+            </div>
+
+            <div class="actions">
+              <h3 class="signuppage_btn">
+                <%= f.submit "登録する", class: "btn btn-md btn-success form-control" %>
+              </h3>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-1"></div>
+      <div class="col-md-2"></div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</section>

@@ -15,12 +15,16 @@
     相手の性格で選ぶ新しい<br>
     住居マッチングサービス
   </h3>
-  <h4 class="toppage_contents">
-    新しく登録する方はコチラ<br>
-    <i class="fas fa-arrow-down"></i>
-  </h4>
-  <h3>
-    <%= link_to "会員登録する！", new_user_registration_path, class: "btn toppage_sub_contents_btn" %>
-  </h3>
+
+  <% if user_signed_in? %>
+  <% else %>
+    <h4 class="toppage_contents">
+      新しく登録する方はコチラ<br>
+      <i class="fas fa-arrow-down"></i>
+    </h4>
+    <h3>
+      <%= link_to "会員登録する！", new_user_registration_path, class: "btn toppage_sub_contents_btn" %>
+    </h3>
+  <% end %>
     
 </div>
