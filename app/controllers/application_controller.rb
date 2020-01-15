@@ -6,12 +6,12 @@ class ApplicationController < ActionController::Base
 
   # サインアップ後のpath
   def after_sign_up_path_for(resource)
-    user_path(@user)
+    confirm_user_path(@user)
   end
 
   # ログイン後のpath
   def after_sign_in_path_for(resource)
-    user_path(@user)
+    confirm_user_path(@user)
   end
 
   # ログアウト後のpath
