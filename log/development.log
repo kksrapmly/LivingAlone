@@ -5675,3 +5675,970 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 1314ms (Views: 1312.1ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/users/sign_in" for 10.0.2.2 at 2020-01-14 14:19:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TlSR8tksTeXtlJ53myr86pDFS2W7Kl/TFr/WqP/De0fm6OaWHOej+SR/gwCTZlPCsC3RVUrD2H49YT8Sv1KkAA==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TlSR8tksTeXtlJ53myr86pDFS2W7Kl/TFr/WqP/De0fm6OaWHOej+SR/gwCTZlPCsC3RVUrD2H49YT8Sv1KkAA==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (87.7ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 6794ms (Views: 6743.9ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-01-14 14:19:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (65.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1342ms (Views: 1340.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2020-01-14 14:19:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d6Ur3jBZwOoCicBGLPne0ZZUgBxmA/LKWpFYVQ0ErN6SsNCsvXitfXAbyBYbVDh4GYOrJ+SKTKbMI/ObWNuBwQ==", "user"=>{"name"=>"", "which"=>"借りる", "sex"=>"男", "prefecture"=>"都道府県を選択して下さい", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "introduction"=>""}, "commit"=>"会員登録する"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (8.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (95.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1995ms (Views: 1702.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-01-14 14:21:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user" for 10.0.2.2 at 2020-01-14 14:22:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2020-01-14 14:22:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1730ms (Views: 1599.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-14 14:22:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1638ms (Views: 1505.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-01-14 14:22:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (92.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1904ms (Views: 1902.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2020-01-14 14:22:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"50XTjonwb6yvjAGiiR+5koQX9zppuNc4kD+YrvEjwPoCUCj8BNECO90eCfK+sl87C8DcAesxaVQGjTNgpPzt5Q==", "user"=>{"name"=>"", "which"=>"借りる", "sex"=>"男", "prefecture"=>"都道府県を選択して下さい", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "introduction"=>""}, "commit"=>"会員登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (86.3ms)
+  Rendered layouts/_footer.html.erb (16.2ms)
+Completed 200 OK in 2020ms (Views: 1857.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-01-14 14:24:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (2.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (80.9ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 23866ms (Views: 23864.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-01-14 14:24:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (87.4ms)
+Started POST "/users" for 10.0.2.2 at 2020-01-14 14:24:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"plGB9PbL/euLPxFD5Ar9Uq4wHOMCkBN0sH/uYJdm8Og00dsWzwOH+D3CIhKbEtvyVED33Qy+3a9zRV3Z1g/33w==", "user"=>{"name"=>"", "which"=>"借りる", "sex"=>"男", "prefecture"=>"都道府県を選択して下さい", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "introduction"=>""}, "commit"=>"会員登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (97.3ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 2913ms (Views: 2911.2ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 2299ms (Views: 1832.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-01-14 14:26:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (183.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 2245ms (Views: 2242.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2020-01-14 14:26:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aehnC+0jGS2XtgVSoz1aIk+eaboyh/qbJivDvA3n3PaM/Zx5YAJ0uuUkDQKUkLyLwElCgbAORPewmWhyWDjx6Q==", "user"=>{"name"=>"", "which"=>"借りる", "sex"=>"男", "prefecture"=>"都道府県を選択して下さい", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "introduction"=>""}, "commit"=>"会員登録する"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (132.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 1870ms (Views: 1662.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-01-14 14:27:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (43.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1563ms (Views: 1561.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2020-01-14 14:27:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DD3+9cXYduNaZbIZtK1I0og5mtUvZqCMjT/aEReyur7pKAWHSPkbdCj3ukmDAK57B+6x7q3vHuAbjXHfQm2XoQ==", "user"=>{"name"=>"", "which"=>"借りる", "sex"=>"男", "prefecture"=>"都道府県を選択して下さい", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "introduction"=>""}, "commit"=>"会員登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (3.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (88.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1525ms (Views: 1398.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-01-14 14:41:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (13.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (194.1ms)
+  Rendered layouts/_footer.html.erb (15.0ms)
+Completed 200 OK in 22492ms (Views: 22193.5ms | ActiveRecord: 99.3ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2020-01-14 14:41:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4zdrwsj05Hx3QSWSo2kBG3aSW9cZAPVYXOXgQ2AbX9AGIpCwRdWJ6wXTLcKUxOey+UVw7JuJSzTKV0uNNcRyzw==", "user"=>{"name"=>"", "which"=>"借りる", "sex"=>"男", "prefecture"=>"都道府県を選択して下さい", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "introduction"=>""}, "commit"=>"会員登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 0.2ms)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /vagrant/LivingAlone/config/locales/devise.ja.yml: #<Psych::SyntaxError: (<unknown>): could not find expected ':' while scanning a simple key at line 143 column 1>):
+  
+i18n (1.8.1) lib/i18n/backend/base.rb:244:in `rescue in load_yml'
+i18n (1.8.1) lib/i18n/backend/base.rb:240:in `load_yml'
+i18n (1.8.1) lib/i18n/backend/base.rb:225:in `load_file'
+i18n (1.8.1) lib/i18n/backend/base.rb:18:in `block in load_translations'
+i18n (1.8.1) lib/i18n/backend/base.rb:18:in `each'
+i18n (1.8.1) lib/i18n/backend/base.rb:18:in `load_translations'
+i18n (1.8.1) lib/i18n/backend/simple.rb:80:in `init_translations'
+i18n (1.8.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.8.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.8.1) lib/i18n/config.rb:51:in `available_locales_set'
+i18n (1.8.1) lib/i18n.rb:336:in `locale_available?'
+i18n (1.8.1) lib/i18n.rb:342:in `enforce_available_locales!'
+i18n (1.8.1) lib/i18n.rb:198:in `translate'
+activemodel (5.2.4.1) lib/active_model/naming.rb:190:in `human'
+activemodel (5.2.4.1) lib/active_model/errors.rb:424:in `generate_message'
+activemodel (5.2.4.1) lib/active_model/errors.rb:454:in `normalize_message'
+activemodel (5.2.4.1) lib/active_model/errors.rb:298:in `add'
+activemodel (5.2.4.1) lib/active_model/validations/presence.rb:7:in `validate_each'
+activerecord (5.2.4.1) lib/active_record/validations/presence.rb:10:in `validate_each'
+activemodel (5.2.4.1) lib/active_model/validator.rb:152:in `block in validate'
+activemodel (5.2.4.1) lib/active_model/validator.rb:149:in `each'
+activemodel (5.2.4.1) lib/active_model/validator.rb:149:in `validate'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:606:in `block (2 levels) in default_terminator'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:605:in `catch'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:605:in `block in default_terminator'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:816:in `_run_validate_callbacks'
+activemodel (5.2.4.1) lib/active_model/validations.rb:409:in `run_validations!'
+activemodel (5.2.4.1) lib/active_model/validations/callbacks.rb:118:in `block in run_validations!'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:816:in `_run_validation_callbacks'
+activemodel (5.2.4.1) lib/active_model/validations/callbacks.rb:118:in `run_validations!'
+activemodel (5.2.4.1) lib/active_model/validations.rb:339:in `valid?'
+activerecord (5.2.4.1) lib/active_record/validations.rb:67:in `valid?'
+activerecord (5.2.4.1) lib/active_record/validations.rb:84:in `perform_validations'
+activerecord (5.2.4.1) lib/active_record/validations.rb:46:in `save'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:310:in `block (2 levels) in save'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:387:in `block in with_transaction_returning_status'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `block in transaction'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/transaction.rb:239:in `block in within_new_transaction'
+/usr/lib/ruby/2.5.0/monitor.rb:235:in `mon_synchronize'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/transaction.rb:236:in `within_new_transaction'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `transaction'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:212:in `transaction'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:385:in `with_transaction_returning_status'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:310:in `block in save'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:325:in `rollback_active_record_state!'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:309:in `save'
+activerecord (5.2.4.1) lib/active_record/suppressor.rb:44:in `save'
+devise (4.7.1) app/controllers/devise/registrations_controller.rb:19:in `create'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.1) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.8) lib/rack/etag.rb:25:in `call'
+rack (2.0.8) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.8) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.8) lib/rack/session/abstract/id.rb:259:in `context'
+rack (2.0.8) lib/rack/session/abstract/id.rb:253:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for 10.0.2.2 at 2020-01-14 14:42:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user" for 10.0.2.2 at 2020-01-14 14:42:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2020-01-14 14:42:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1912ms (Views: 1657.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-01-14 14:43:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (49.3ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 1585ms (Views: 1583.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2020-01-14 14:43:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n2j3TqsR8hSTSL3xe2t1/QZWubTKXiHUq61pXfRx6Kt6fQw8JjCfg+HataFMxpNUiYGSj0jXn7g9H8KToa7FtA==", "user"=>{"name"=>"", "which"=>"借りる", "sex"=>"男", "prefecture"=>"都道府県を選択して下さい", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "introduction"=>""}, "commit"=>"会員登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.2ms)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /vagrant/LivingAlone/config/locales/devise.ja.yml: #<Psych::SyntaxError: (<unknown>): could not find expected ':' while scanning a simple key at line 143 column 1>):
+  
+i18n (1.8.1) lib/i18n/backend/base.rb:244:in `rescue in load_yml'
+i18n (1.8.1) lib/i18n/backend/base.rb:240:in `load_yml'
+i18n (1.8.1) lib/i18n/backend/base.rb:225:in `load_file'
+i18n (1.8.1) lib/i18n/backend/base.rb:18:in `block in load_translations'
+i18n (1.8.1) lib/i18n/backend/base.rb:18:in `each'
+i18n (1.8.1) lib/i18n/backend/base.rb:18:in `load_translations'
+i18n (1.8.1) lib/i18n/backend/simple.rb:80:in `init_translations'
+i18n (1.8.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.8.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.8.1) lib/i18n/config.rb:51:in `available_locales_set'
+i18n (1.8.1) lib/i18n.rb:336:in `locale_available?'
+i18n (1.8.1) lib/i18n.rb:342:in `enforce_available_locales!'
+i18n (1.8.1) lib/i18n.rb:198:in `translate'
+activemodel (5.2.4.1) lib/active_model/naming.rb:190:in `human'
+activemodel (5.2.4.1) lib/active_model/errors.rb:424:in `generate_message'
+activemodel (5.2.4.1) lib/active_model/errors.rb:454:in `normalize_message'
+activemodel (5.2.4.1) lib/active_model/errors.rb:298:in `add'
+activemodel (5.2.4.1) lib/active_model/validations/presence.rb:7:in `validate_each'
+activerecord (5.2.4.1) lib/active_record/validations/presence.rb:10:in `validate_each'
+activemodel (5.2.4.1) lib/active_model/validator.rb:152:in `block in validate'
+activemodel (5.2.4.1) lib/active_model/validator.rb:149:in `each'
+activemodel (5.2.4.1) lib/active_model/validator.rb:149:in `validate'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:606:in `block (2 levels) in default_terminator'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:605:in `catch'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:605:in `block in default_terminator'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:816:in `_run_validate_callbacks'
+activemodel (5.2.4.1) lib/active_model/validations.rb:409:in `run_validations!'
+activemodel (5.2.4.1) lib/active_model/validations/callbacks.rb:118:in `block in run_validations!'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:816:in `_run_validation_callbacks'
+activemodel (5.2.4.1) lib/active_model/validations/callbacks.rb:118:in `run_validations!'
+activemodel (5.2.4.1) lib/active_model/validations.rb:339:in `valid?'
+activerecord (5.2.4.1) lib/active_record/validations.rb:67:in `valid?'
+activerecord (5.2.4.1) lib/active_record/validations.rb:84:in `perform_validations'
+activerecord (5.2.4.1) lib/active_record/validations.rb:46:in `save'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:310:in `block (2 levels) in save'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:387:in `block in with_transaction_returning_status'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `block in transaction'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/transaction.rb:239:in `block in within_new_transaction'
+/usr/lib/ruby/2.5.0/monitor.rb:235:in `mon_synchronize'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/transaction.rb:236:in `within_new_transaction'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `transaction'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:212:in `transaction'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:385:in `with_transaction_returning_status'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:310:in `block in save'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:325:in `rollback_active_record_state!'
+activerecord (5.2.4.1) lib/active_record/transactions.rb:309:in `save'
+activerecord (5.2.4.1) lib/active_record/suppressor.rb:44:in `save'
+devise (4.7.1) app/controllers/devise/registrations_controller.rb:19:in `create'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.1) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.8) lib/rack/etag.rb:25:in `call'
+rack (2.0.8) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.8) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.8) lib/rack/session/abstract/id.rb:259:in `context'
+rack (2.0.8) lib/rack/session/abstract/id.rb:253:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user" for 10.0.2.2 at 2020-01-14 14:51:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2020-01-14 14:51:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 6542ms (Views: 6468.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-01-14 14:51:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (58.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1499ms (Views: 1441.5ms | ActiveRecord: 23.7ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2020-01-14 14:51:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ImBh5iRPjDyx6hStOb0sBAM4X861Jj5C6GKkzTfgm5THdZqUqW7hq8N4HP0OEMqtjO909TevgC5+0A8DYj+2iw==", "user"=>{"name"=>"", "which"=>"借りる", "sex"=>"男", "prefecture"=>"都道府県を選択して下さい", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "introduction"=>""}, "commit"=>"会員登録する"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (4.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (112.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1881ms (Views: 1634.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-01-14 14:53:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (39.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1466ms (Views: 1464.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2020-01-14 14:53:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f0CKKdiE+1IxKi7QVBm8HDdL97VfxqYCrZTyoo50U7/X/P1NHU8VTvjBM6dcVRM0F6Ntha4vIa+GShsYzuWM+A==", "user"=>{"email"=>"aaaaa@ne", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aaaaa@ne"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 386ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-01-14 14:53:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 1531ms (Views: 1488.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-14 14:53:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/statics/top.html.erb:19
+  Rendered statics/top.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_footer.html.erb (4.6ms)
+Completed 200 OK in 1428ms (Views: 1385.7ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2020-01-14 14:54:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dN3h3bGbqN3RQE2OW+Lr5Trg/8Oy07pxUyw7JRczS+oHqpGUlVur/1ETqMinSovoK5QzpnCOYBoukyjUw5nD7w=="}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-14 14:54:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 885ms (Views: 849.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-01-15 03:12:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (46.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 3170ms (Views: 3116.8ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2020-01-15 03:12:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mgK/PMErAVRKjhWPur2iX8VXrmcBA3olhZeM13PwWCTf40ygqWFYWtiQ2DHyFCmTZPW349f0bROspCaiRoLvmg==", "user"=>{"email"=>"aaaaa@ne", "password"=>"[FILTERED]"}, "commit"=>"ログインする"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aaaaa@ne"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 304ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-01-15 03:12:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 664ms (Views: 618.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 03:12:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 533ms (Views: 495.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 03:32:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 3532ms (Views: 3490.9ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 04:13:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 3303ms (Views: 3250.4ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 04:14:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 550ms (Views: 519.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 04:17:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 729ms (Views: 693.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 04:18:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 802ms (Views: 771.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 04:34:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 586ms (Views: 556.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 04:39:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (14.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 620ms (Views: 575.8ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 04:40:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 816ms (Views: 785.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 04:59:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 9321ms (Views: 9287.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 05:01:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 689ms (Views: 662.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 05:02:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 3822ms (Views: 3787.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-15 05:02:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  Rendered houses/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 477ms (Views: 446.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-01-15 05:03:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/statics/top.html.erb:19
+  Rendered statics/top.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 613ms (Views: 592.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 05:03:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 576ms (Views: 538.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/statics/lend" for 10.0.2.2 at 2020-01-15 05:04:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#lend as HTML
+  Rendering statics/lend.html.erb within layouts/application
+  Rendered statics/lend.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 461ms (Views: 429.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/statics/borrow" for 10.0.2.2 at 2020-01-15 05:04:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#borrow as HTML
+  Rendering statics/borrow.html.erb within layouts/application
+  Rendered statics/borrow.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 550ms (Views: 516.4ms | ActiveRecord: 3.4ms)
+
+

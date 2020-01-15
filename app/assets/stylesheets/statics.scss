@@ -24,7 +24,7 @@
   }
 }
 
-// statics/about
+// statics/about、statics/borrow、statics/lend
 .aboutpage {
   background-color: #f07c10;
   &_title {
@@ -55,6 +55,14 @@
     margin: 0 auto;
     border-radius: 30px;
     background: #33e905;
+    color: white;
+  }
+  &_btn2 {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background: #adb0b1;
     color: white;
   }
 }
