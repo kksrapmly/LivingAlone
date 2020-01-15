@@ -1,3 +1,46 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// users/confirm
+.userConfirmpage {
+  background-color:  black;
+  color: white;
+  &_img {
+    margin-top: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &_line {
+    margin-top: 20px;
+    border: 1px solid gray;
+  }
+  &_name {
+    background-color: skyblue;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 1px solid gray;
+  }
+  &_radio {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  &_introduction {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-top: 1px solid gray;
+  }
+  &_btn {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background: #33e905;
+    color: white;
+    margin-bottom: 20px;
+  }
+}
