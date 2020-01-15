@@ -11,24 +11,27 @@
           気に入った相手とやり取りを重ね、相手との信頼関係を築いた上での契約。<br>
           新しい形の1人暮らし専用マッチングアプリ、「LivingAlone」で素敵な相手を見つけてみませんか？<br><br>
           ※❶本アプリで契約自体はできません。契約は個人間でお願いします。<br>
-          ※❷1人暮らしの方専用のため、2人以上のお住まいをお探し・登録はご遠慮下さい。<br>
+          ※❷1人暮らしの方専用のため、2人以上を目的としたお住まいのお探し・ご登録はご遠慮下さい。<br>
           ※❸お急ぎで物件をお探しの方、契約をお急ぎの方のご利用はご遠慮下さい。<br>
-          ※❹マッチングが成立しないとやり取りは行えません。
+          ※❹マッチングが成立しないと相手とのやり取りは行えません。
         </p>
         <hr class="divider light my-4">
         
-        <h4 class="aboutpage_registration">まだ会員登録をしていない方はこちら<br>
-          <i class="fas fa-arrow-down"></i>
-        </h4>
-        <h3>
-          <%= link_to "会員登録する！", new_user_registration_path, class: "btn aboutpage_btn" %>
-        </h3>
-        <h4 class="aboutpage_session">既に会員登録がお済みの方はこちら<br>
-          <i class="fas fa-arrow-down"></i>
-        </h4>
-        <h3>
-          <%= link_to "ログインする！", new_user_session_path, class: "btn aboutpage_btn1" %>
-        </h3>
+        <% if user_signed_in? %>
+        <% else %>
+          <h4 class="aboutpage_registration">まだ会員登録をしていない方はこちら<br>
+            <i class="fas fa-arrow-down"></i>
+          </h4>
+          <h3>
+            <%= link_to "会員登録する！", new_user_registration_path, class: "btn aboutpage_btn" %>
+          </h3>
+          <h4 class="aboutpage_session">既に会員登録がお済みの方はこちら<br>
+            <i class="fas fa-arrow-down"></i>
+          </h4>
+          <h3>
+            <%= link_to "ログインする！", new_user_session_path, class: "btn aboutpage_btn1" %>
+          </h3>
+        <% end %>
       </div>
     </div>
   </div>
