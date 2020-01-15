@@ -3,6 +3,13 @@
     1人暮らしのための住まいを<br>
     借りたい人、貸したい人へ
   </h3>
+
+  <% if flash[:notice] %>
+    <p class="alertmessage">
+      <%= flash[:notice] %>
+    </p>        
+  <% end %>
+  
   <h1 class="toppage_title">
     <strong>LivingAlone</strong>
   </h1>

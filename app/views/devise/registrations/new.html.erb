@@ -48,7 +48,7 @@
               <label for="file_photo" class="rounded-circle userProfileImg">
                 <div class="userProfileImg_description">プロフィール画像</div>
                 <i class="fas fa-camera fa-3x"></i>
-                <%= f.file_field :user_image, id: "file_photo", style: "display: none;" %>
+                <%= f.attachment_field :user_image, fallback: "no_image.jpg", id: "file_photo" %>
               </label>
             </div>
 

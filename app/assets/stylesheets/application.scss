@@ -81,6 +81,17 @@ footer {
 }
 
 
+// 成功メッセージ
+.alertmessage {
+  text-align: center;
+  color: green;
+}
+// エラーメッセージ
+.flashmessage {
+  text-align: center;
+  color: red;
+}
+
 // hrタグ
 hr {
   background-color: gray;
