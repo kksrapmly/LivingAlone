@@ -11,7 +11,7 @@ class CreateHouses < ActiveRecord::Migration[5.2]
       t.text :body, limit: 1000, null: false, default: ""
       t.integer :prefecture, null: false, default: 0
       t.integer :price, null: false
-      t.integer :construction
+      t.integer :construction, null: false, default: 0
       t.integer :status, null: false, default: 0
       t.datetime :deleted_at
 

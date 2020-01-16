@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2020_01_11_074416) do
     t.text "body", limit: 1000, default: "", null: false
     t.integer "prefecture", default: 0, null: false
     t.integer "price", null: false
-    t.integer "construction"
+    t.integer "construction", default: 0, null: false
     t.integer "status", default: 0, null: false
     t.datetime "deleted_at"
     t.datetime "created_at", null: false

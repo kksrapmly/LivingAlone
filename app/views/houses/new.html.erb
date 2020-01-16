@@ -1,2 +1,87 @@
-<h1>Houses#new</h1>
-<p>Find me in app/views/houses/new.html.erb</p>
+<section class="houseNewpage">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <h2 class="houseNewpage_title">新規物件登録フォーム</h2>
+        <p class="flashmessage">
+          <%= flash.now[:house] %>
+        </p>
+
+        <div class="form-body">
+          <%= form_with(model: @house, local: true) do |h| %>
+
+            <div class="houseNewpage_field">
+              <label for="file_photo" class="rounded-circle houseProfileImg">
+                <div class="houseProfileImg_description">物件の画像</div>
+                <i class="fas fa-camera fa-3x"></i>
+                <%= h.attachment_field :house_image, fallback: "no_house_image_.jpg", multiple: true, id: "file_photo" %>
+              </label>
+            </div>
+
+            <div class="houseNewpage_field">
+              <%= h.text_field :title, autocomplete: "title", class: "form-control", placeholder: "物件名（100文字以内）" %>
+            </div>
+
+            <div class="houseNewpage_field">
+              <%= h.select :prefecture, House.prefectures.keys, {}, class: "form-control btn btn-info" %>
+            </div>
+
+            <div class="houseNewpage_field">
+              <%= h.text_area :address, class: "form-control", placeholder: "住所" %>
+            </div>
+
+            <div class="houseNewpage_field">
+              <%= h.number_field :price, min: 1, class: "form-control", placeholder: "賃料（１ヶ月/数字のみ） 例：25000" %>
+            </div>
+
+            <div class="houseNewpage_field">
+              <%= h.text_field :deposit, class: "form-control", placeholder: "敷金" %>
+            </div>
+
+            <div class="houseNewpage_field">
+              <%= h.text_field :key, class: "form-control", placeholder: "礼金" %>
+            </div>
+
+            <div class="houseNewpage_field">
+              <%= h.select :construction, House.constructions.keys, {}, class: "form-control btn btn-info" %>
+            </div>
+
+            <div class="houseNewpage_field">
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  契約状況：
+                  <%= h.radio_button :status, "空き", class: "form-check-input", id: "statusRadio1" %>
+                  <label class="form-check-label" for="statusRadio1">空き</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <%= h.radio_button :status, "済み", class: "form-check-input", id: "statusRadio2" %>
+                  <label class="form-check-label" for="statusRadio2">済み</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="houseNewpage_field">
+              <%= h.text_field :comment, class: "form-control", placeholder: "一言コメント（５０字以内）" %>
+            </div>
+
+            <div class="houseNewpage_field">
+              <%= h.text_area :body, maxlength: "1000", rows: "10", class: "form-control", placeholder: "物件の説明等（10文字以上1000文字以内）" %>
+            </div>
+
+            <div class="actions">
+              <h3>
+                <%= h.submit "物件を登録する", class: "btn btn-primary houseNewpage_btn form-control" %>
+              </h3>
+            </div>
+
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-1"></div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</section>
