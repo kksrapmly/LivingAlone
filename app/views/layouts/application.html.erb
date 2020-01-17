@@ -20,19 +20,19 @@
         <% if user_signed_in? %>
         <nav>
           <ul class="nav navbar-expend-lg navbar-right">
-            <li>
+            <li class= "livingAlone_header">
               <%= link_to "借りたい方", statics_borrow_path %>
             </li>
-            <li>
+            <li class= "livingAlone_header">
               <%= link_to "貸したい方", statics_lend_path %>
             </li>
-            <li>
+            <li class= "livingAlone_header">
               <%= link_to "住まいを探す", houses_path %>
             </li>
-            <li>
+            <li class= "livingAlone_header">
               <%= link_to current_user.name, confirm_user_path(current_user.id) %>
             </li>
-            <li>
+            <li class= "livingAlone_header">
               <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
             </li>
           </ul>
@@ -42,16 +42,16 @@
         <% else %>
         <nav>
           <ul class="nav navbar-expand-lg navbar-right">
-            <li>
+            <li class= "livingAlone_header">
               <%= link_to "ABOUT", statics_about_path %>
             </li>
-            <li>
+            <li class= "livingAlone_header">
               <%= link_to "住まいを探す", houses_path %>
             </li>
-            <li>
+            <li class= "livingAlone_header">
               <%= link_to "新規登録", new_user_registration_path %>
             </li>
-            <li>
+            <li class= "livingAlone_header">
               <%= link_to "ログイン", new_user_session_path %>
             </li>
           </ul>

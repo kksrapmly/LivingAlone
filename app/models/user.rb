@@ -4,6 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  
+  has_many :houses, dependent: :destroy
+
   attachment :user_image
 
   enum which: { "借りる": 0, "貸したい": 1 }

@@ -1,6 +1,8 @@
 class House < ApplicationRecord
 
 
+  belongs_to :user
+
   attachment :house_image
 
   enum status: { "空き": 0, "済み": 1 }

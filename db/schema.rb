@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2020_01_11_074416) do
     t.string "key", null: false
     t.string "comment", limit: 50
     t.text "body", limit: 1000, default: "", null: false
+    t.integer "user_id"
     t.integer "prefecture", default: 0, null: false
     t.integer "price", null: false
     t.integer "construction", default: 0, null: false

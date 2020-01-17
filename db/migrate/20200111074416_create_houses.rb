@@ -9,6 +9,7 @@ class CreateHouses < ActiveRecord::Migration[5.2]
       t.string :key, null: false
       t.string :comment, limit: 50
       t.text :body, limit: 1000, null: false, default: ""
+      t.integer :user_id
       t.integer :prefecture, null: false, default: 0
       t.integer :price, null: false
       t.integer :construction, null: false, default: 0

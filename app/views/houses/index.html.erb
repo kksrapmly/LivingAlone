@@ -1,2 +1,70 @@
-<h1>Houses#index</h1>
-<p>Find me in app/views/houses/index.html.erb</p>
+<section class="houseIndexpage">
+  <div class="container">
+    <h2 class="houseIndexpage_title">物件一覧</h2>
+    <hr class="divider light my-4">
+
+    <div class="houseIndexpage_search">
+      <%= form_tag(houses_path,method: :get) do %>
+        <%= text_field_tag :search, "", placeholder: "住所(市区町村のみ可)で検索" %>
+        <%= button_tag '<i class="fa fa-search"></i>'.html_safe, type: 'submit', :name => nil %>
+      <% end %>
+    </div>
+    
+    <% if flash[:notice] %>
+      <p class="alertmessage">
+        <%= flash[:notice] %>
+      </p>
+    <% end %>
+    
+    <div class="row">
+      <% @houses.each do |house| %>
+        <div class="houseIndexpage_bukken">
+          
+          <div class="houseIndexpage_bukken_title">
+            <%= house.title %>
+          </div>
+
+          <div class="houseIndexpage_body">
+            <div class="houseIndexpage_main">
+              <div class="houseIndexpage_overview">
+                <div class="houseIndexpage_images">
+                  <%= attachment_image_tag @house, :house_image, fallback: "no_house_image.jpg", size: "124x110" %>
+                </div>
+                <ul class=houseIndexpage_overview_list>
+                  <li class="houseIndexpage_overview_item">
+                    <%= house.prefecture %>
+                  </li>
+                  <li class="houseIndexpage_overview_item">
+                    <%= house.address %>
+                  </li>
+                  <li class="houseIndexpage_overview_item">
+                    賃料：<%= house.price %> 円
+                  </li>
+                  <li class="houseIndexpage_overview_item">
+                    敷金：<%= house.deposit %>  礼金：<%= house.key %>
+                  </li> 
+                  <li class="houseIndexpage_overview_item">
+                      管理者名：<%= house.user.name %>
+                  </li>
+                  <li class="houseIndexpage_overview_item">
+                    契約状況：<%= house.status %>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="houseIndexpage_comment">
+                <i class="far fa-hand-point-right"></i> 一言コメント：<%= house.comment %>
+              </div>
+
+              <h3>
+                <%= link_to "詳細を見る", house_path(house.id), class: "btn houseIndexpage_btn" %>
+              </h3>
+            </div>
+          </div>
+
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</section>
