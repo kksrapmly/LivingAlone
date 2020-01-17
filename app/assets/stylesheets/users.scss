@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-// users/confirm
+// users/confirm 
 .userConfirmpage { 
   background-color:  black;
   color: white;
@@ -15,6 +15,7 @@
   &_line {
     margin-top: 20px;
     border: 1px solid gray;
+    background-color: black;
   }
   &_name {
     background-color: skyblue;

@@ -27,7 +27,7 @@
 
 // houses/index
 .houseIndexpage {
-  background-color: rgb(105, 235, 54);
+  background-color: skyblue;
   overflow: hidden;
   &_title {
     margin-top: 50px;
@@ -41,6 +41,7 @@
   &_bukken {
     display: block;
     border-radius: 3px;
+    width: 500px;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -73,8 +74,63 @@
   }
   &_btn {
     margin-top: 10px;
-    margin-left: 80px;
+    margin-left: 200px;
     background-color: coral;
     color: white;
+  }
+}
+
+
+// houses/show
+.houseShowpage {
+  background-color: white;
+  color: white;
+  &_img {
+    margin-top: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &_line {
+    margin-top: 20px;
+    border: 1px solid gray;
+    background-color: rgb(14, 29, 29);
+  }
+  &_title {
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 1px solid gray;
+  }
+  &_user {
+    margin-top: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  &_list {
+    border-bottom: 1px solid gray;
+  }
+  &_info {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  &_introduction {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-top: 1px solid gray;
+  }
+  &_btn {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: darkgray;
+    color: white;
+    margin-bottom: 20px;
   }
 }

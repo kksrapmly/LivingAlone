@@ -1,7 +1,7 @@
 class HousesController < ApplicationController
   
   
-  PER = 9
+  PER = 10
 
   def index
     @user = current_user
@@ -16,6 +16,8 @@ class HousesController < ApplicationController
   end
 
   def show
+    @house = House.find(params[:id])
+    @user = @house.user
   end
 
   def new

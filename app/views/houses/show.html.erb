@@ -1,2 +1,58 @@
-<h1>Houses#show</h1>
-<p>Find me in app/views/houses/show.html.erb</p>
+<section class="houseShowpage">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="houseShowpage_img text-center">
+          <%= attachment_image_tag @house, :house_image, fallback: "no_house_image.jpg", size: "250x250" %>
+        </div>
+        <hr class="divider light my-4">
+
+        <div class="houseShowpage_line">
+          <div class="houseShowpage_title">
+            <i class="far fa-building"></i> <%= @house.title %>
+          </div>
+
+          <div class="houseShowpage_user">
+            <%= attachment_image_tag @user, :user_image, fallback: "no_image.jpg", size: "100x100" %>
+            <ul>
+              <li class="houseShowpage_list">
+                <%= link_to @user.name, user_path(@user.id), class: "user_#{@user.id}" %>
+              </li>
+            </ul>
+          </div>
+
+          <div class="houseShowpage_info">
+            所在地：<%= @house.prefecture %> <%= @house.address %>
+          </div>
+
+          <div class="houseShowpage_info">
+            賃料(1ヶ月)：<%= @house.price %>円
+          </div>
+
+          <div class="houseShowpage_info">
+            敷金：<%= @house.deposit %>  |  礼金：<%= @house.key %>
+          </div>
+
+          <div class="houseShowpage_info">
+            建物の構造：<%= @house.construction %>
+          </div>
+
+          <div class="houseShowpage_info">
+            現在の契約状況：<%= @house.status %>
+          </div>
+
+          <div class="houseShowpage_introduction">
+            <mark class="bg-info">物件の紹介</mark><br><br>
+            <%= @house.body %>
+          </div>
+        </div>
+
+        <hr class="divider light my-4">
+        <h3>
+          <%= link_to "物件一覧に戻る", houses_path, class: "btn houseShowpage_btn" %>
+        </h3>
+
+      </div>
+    </div>
+  </div>
+</section>
