@@ -5,7 +5,7 @@
 
 // houses/new
 .houseNewpage { 
-  background-color: skyblue;
+  background: linear-gradient(#70e1f5, #ffd194);
   overflow: hidden;
   &_title {
     margin-top: 50px;
@@ -27,12 +27,13 @@
 
 // houses/index
 .houseIndexpage {
-  background-color: skyblue;
+  background: linear-gradient(#70e1f5, #ffd194);
   overflow: hidden;
   &_title {
     margin-top: 50px;
     text-align: center;
     color: white;
+    background-color: black;
   }
   &_search {
     text-align: center;
@@ -83,8 +84,8 @@
 
 // houses/show
 .houseShowpage {
-  background-color: white;
-  color: white;
+  background: linear-gradient(#70e1f5, #ffd194);
+  color: black;
   &_img {
     margin-top: 50px;
     border-radius: 50%;
@@ -93,10 +94,11 @@
   &_line {
     margin-top: 20px;
     border: 1px solid gray;
-    background-color: rgb(14, 29, 29);
+    background-color: white;
   }
   &_title {
     background-color: black;
+    color: white;
     text-align: center;
     font-size: 20px;
     text-align: center;

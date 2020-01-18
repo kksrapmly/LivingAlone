@@ -15,7 +15,7 @@ class HousesController < ApplicationController
     end
   end
 
-  def show
+  def show 
     @house = House.find(params[:id])
     @user = @house.user
   end

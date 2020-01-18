@@ -6,6 +6,7 @@ class UsersController < ApplicationController
 
   def confirm
     @user = User.find(params[:id])
+    @house = House.where(user_id: current_user)
   end
 
   def edit

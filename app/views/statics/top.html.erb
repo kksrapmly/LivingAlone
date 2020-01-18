@@ -1,37 +1,39 @@
-<div class="toppage text-center">
-  <h3 class="toppage_contents">
-    1人暮らしのための住まいを<br>
-    借りたい人、貸したい人へ
-  </h3>
-
-  <% if flash[:notice] %>
-    <p class="alertmessage">
-      <%= flash[:notice] %>
-    </p>        
-  <% end %>
-  
-  <h1 class="toppage_title">
-    <strong>LivingAlone</strong>
-  </h1>
-  <h3 class="toppage_sub_contents">
-    借りたい人<br>
-       ×<br>
-    貸したい人<br>
-  </h3>
-  <h3 class="toppage_contents">
-    相手の性格で選ぶ新しい<br>
-    住居マッチングサービス
-  </h3>
-
-  <% if user_signed_in? %>
-  <% else %>
-    <h4 class="toppage_contents">
-      新しく登録する方はコチラ<br>
-      <i class="fas fa-arrow-down"></i>
-    </h4>
-    <h3>
-      <%= link_to "会員登録する！", new_user_registration_path, class: "btn toppage_sub_contents_btn" %>
+<section class="toppage">
+  <div class ="container">
+    <h3 class="toppage_contents">
+      1人暮らしのための住まいを<br>
+      借りたい人、貸したい人へ
     </h3>
-  <% end %>
-    
-</div>
+
+    <% if flash[:notice] %>
+      <p class="alertmessage">
+        <%= flash[:notice] %>
+      </p>        
+    <% end %>
+  
+    <h1 class="toppage_title">
+      <strong>LivingAlone</strong>
+    </h1>
+    <h3 class="toppage_sub_contents">
+      借りたい人<br>
+         ×<br>
+      貸したい人<br>
+    </h3>
+    <h3 class="toppage_contents">
+      相手の性格で選ぶ新しい<br>
+      住居マッチングサービス
+    </h3>
+
+    <% if user_signed_in? %>
+    <% else %>
+      <h4 class="toppage_contents">
+        新しく登録する方はコチラ<br>
+        <i class="fas fa-arrow-down"></i>
+      </h4>
+      <h3>
+        <%= link_to "会員登録する！", new_user_registration_path, class: "btn toppage_sub_contents_btn" %>
+      </h3>
+    <% end %>
+  
+  </div>
+</section>

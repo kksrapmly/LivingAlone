@@ -1,6 +1,6 @@
 // devise/registration/new 
 .signuppage {
-  background-color: skyblue;
+  background: linear-gradient(#70e1f5, #ffd194);
   overflow: hidden;
   &_title {
     margin-top: 50px;
@@ -17,7 +17,7 @@
 
 // devise/session/new
 .loginpage {
-  background-color: skyblue;
+  background: linear-gradient(#70e1f5, #ffd194);
   overflow: hidden;
   &_title {
     margin-top: 50px;
@@ -57,11 +57,4 @@
 
 .error_messages {
   color: red;
-}
-
-.col-md-2 {
-  background-color: springgreen;
-}
-.col-md-1 {
-  background-color: violet;
 }

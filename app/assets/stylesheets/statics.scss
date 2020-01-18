@@ -5,14 +5,19 @@
 
 // statics/top
 .toppage {
+  background: linear-gradient(#70e1f5, #ffd194);
+  overflow: hidden;
   &_contents {
     margin-top: 50px;
+    text-align: center;
   }
   &_title {
     margin-top: 20px;
+    text-align: center;
   }
   &_sub_contents {
     margin-top: 20px;
+    text-align: center;
     &_btn {
       display: block;
       max-width: 400px;
@@ -26,7 +31,9 @@
 
 // statics/about、statics/borrow、statics/lend
 .aboutpage {
-  background-color: #f07c10;
+  // background-color: #f07c10;
+  background: linear-gradient(#70e1f5, #ffd194);
+  overflow: hidden;
   &_title {
     margin-top: 100px;
     text-align: center;
@@ -34,12 +41,12 @@
   &_registration {
     text-align: center;
     margin-top: 20px;
-    color: white;
+    color: black;
   }
   &_session {
     text-align: center;
     margin-top: 30px;
-    color: white;
+    color: black;
   }
   &_btn {
     display: block;

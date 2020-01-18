@@ -5,8 +5,9 @@
 
 // users/confirm 
 .userConfirmpage { 
-  background-color:  black;
-  color: white;
+  background: linear-gradient(#70e1f5, #ffd194);
+  overflow: hidden;
+  color: black;
   &_img {
     margin-top: 50px;
     border-radius: 50%;
@@ -15,10 +16,11 @@
   &_line {
     margin-top: 20px;
     border: 1px solid gray;
-    background-color: black;
+    background-color: white;
   }
   &_name {
-    background-color: skyblue;
+    background-color: black;
+    color: white;
     text-align: center;
     font-size: 30px;
     border-bottom: 1px solid gray;
@@ -42,14 +44,14 @@
     border-radius: 30px;
     background: #33e905;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
   }
 }
 
 
 // users/edit
 .userEditpage {
-  background-color: skyblue;
+  background: linear-gradient(#70e1f5, #ffd194);
   overflow: hidden;
   &_title {
     margin-top: 50px;

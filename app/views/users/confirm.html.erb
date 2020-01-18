@@ -41,6 +41,24 @@
           <%= link_to "プロフィールを編集する", edit_user_path(@user), class: "btn userConfirmpage_btn" %>
         </h3>
 
+        <table class="table table-striped">
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <% @house.each do |house| %>
+            <tr>
+              <td><%= attachment_image_tag house, :house_image, fallback: "no_house_image.jpg", size: "50x50" %></td>
+              <td><%= house.title %></td>
+              <td></td>
+              <td></td>
+            </tr>
+          <% end %>
+        </table>
+
       </div>
     </div>
   </div>
