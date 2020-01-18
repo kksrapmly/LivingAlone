@@ -17,7 +17,10 @@ Rails.application.routes.draw do
   get 'statics/lend'
   resources :statics, only:[:top, :about, :borrow, :lend]
 
-  resources :houses
-
+  resources :houses do
+    member do
+      get :confirm
+    end
+  end
 
 end

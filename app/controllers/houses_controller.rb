@@ -20,6 +20,10 @@ class HousesController < ApplicationController
     @user = @house.user
   end
 
+  def confirm
+    @house = House.find(params[:id])
+  end
+
   def new
     @house = House.new
     @user = current_user

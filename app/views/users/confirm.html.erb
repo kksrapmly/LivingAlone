@@ -53,8 +53,8 @@
             <tr>
               <td><%= attachment_image_tag house, :house_image, fallback: "no_house_image.jpg", size: "50x50" %></td>
               <td><%= house.title %></td>
-              <td></td>
-              <td></td>
+              <td><%= house.prefecture %></td>
+              <td><%= link_to "詳細", confirm_house_path(house.id), class: "btn btn-sm userConfirmpage_btn2" %></td>
             </tr>
           <% end %>
         </table>
