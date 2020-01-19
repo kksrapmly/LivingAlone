@@ -82,7 +82,7 @@
 }
 
 
-// houses/show
+// houses/show・houses/confirm
 .houseShowpage {
   background: linear-gradient(#70e1f5, #ffd194);
   color: black;
@@ -143,5 +143,32 @@
     background: #33e905;
     color: white;
     margin-bottom: 20px;
+  }
+}
+
+
+// houses/edit
+.houseEditpage {
+  background: linear-gradient(#70e1f5, #ffd194);
+  overflow: hidden;
+  &_title {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    background-color: black;
+  }
+  &_field {
+    margin-top: 20px;
+  }
+  &_btn {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+  }
+  &_btn2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
   }
 }

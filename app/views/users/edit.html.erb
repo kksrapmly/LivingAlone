@@ -5,6 +5,7 @@
       <div class="col-md-1"></div>
       <div class="col-md-6">
         <h2 class="userEditpage_title">プロフィール編集</h2>
+        
         <p class="flashmessage">
           <%= flash.now[:user] %>
         </p>
@@ -50,7 +51,7 @@
               <label for="file_photo" class="rounded-circle userProfileImg">
                 <div class="userProfileImg_description">プロフィール画像</div>
                 <i class="fas fa-camera fa-3x"></i>
-                <%= f.attachment_field :user_image, fallback: "no_image_.jpg", id: "file_photo" %>
+                <%= f.attachment_field :user_image, fallback: "no_image.jpg", id: "file_photo" %>
               </label>
             </div>
 
@@ -59,7 +60,7 @@
             </div>
 
             <div class="userEditpage_field">
-              <%= f.text_area :introduction, maxlength: "500", rows: "10", class: "form-control", placeholder: "自己紹介（１０文字以上５００文字以内）" %>
+              <%= f.text_area :introduction, maxlength: "500", rows: "10", autofocus: true, class: "form-control", placeholder: "自己紹介（１０文字以上５００文字以内）" %>
             </div>
 
             <div class="actions">

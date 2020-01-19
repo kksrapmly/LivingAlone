@@ -1,7 +1,7 @@
 class HousesController < ApplicationController
   
   
-  PER = 10
+  PER = 10 
 
   def index
     @user = current_user
@@ -43,12 +43,23 @@ class HousesController < ApplicationController
   end
 
   def edit
+    @house = House.find(params[:id])
   end
 
   def update
+    @house = House.find(params[:id])
+    if @house.update(house_params)
+      redirect_to confirm_house_path(@house.id), notice: "物件情報を更新しました。"
+    else
+      flash.now[:house] = "物件情報の更新に失敗しました。全ての情報を入力して下さい。"
+      render "edit"
+    end
   end
 
-  def destory
+  def destroy
+    @house = House.find(params[:id])
+    @house.destroy
+    redirect_to confirm_user_path(current_user.id), notice: "物件情報を削除しました。"
   end
 
   private

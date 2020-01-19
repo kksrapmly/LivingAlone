@@ -16,7 +16,7 @@
             <%= attachment_image_tag @user, :user_image, fallback: "no_image.jpg", size: "100x100" %>
             <ul>
               <li class="houseShowpage_list">
-                <%= link_to @user.name, user_path(@user.id), class: "user_#{@user.id}" %>
+                <%= link_to @user.name, user_path(@user.id), class: "user_#{@user.id}", style: "color:coral" %>
               </li>
             </ul>
           </div>

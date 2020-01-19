@@ -7,6 +7,12 @@
         </div>
         <hr class="divider light my-4">
 
+        <% if flash[:notice] %>
+          <p class="alertmessage">
+            <%= flash[:notice] %>
+          </p>
+        <% end %>
+
         <div class="houseShowpage_line">
           <div class="houseShowpage_title">
             <i class="far fa-building"></i> <%= @house.title %>

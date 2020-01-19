@@ -1,2 +1,92 @@
-<h1>Houses#edit</h1>
-<p>Find me in app/views/houses/edit.html.erb</p>
+<section class="houseEditpage">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <h2 class="houseEditpage_title">登録物件編集</h2>
+
+        <p class="flashmessage">
+          <%= flash.now[:house] %>
+        </p>
+
+        <div class="form-body">
+          <%= form_with(model: @house, local: true) do |h| %>
+
+            <div class="houseEditpage_field">
+              <label for="file_photo" class="rounded-circle houseProfileImg">
+                <div class="houseProfileImg_description">プロフィール画像</div>
+                <i class="fas fa-camera fa-3x"></i>
+                <%= h.attachment_field :house_image, fallback: "no_house_image.jpg", id: "file_photo" %>
+              </label>
+            </div>
+
+            <div class="houseEditpage_field">
+              <%= h.text_field :title, autofocus: true, autocomplete: "title", class: "form-control", placeholder: "物件（100文字以内）" %>
+            </div>
+
+            <div class="houseEditpage_field">
+              <%= h.select :prefecture, House.prefectures.keys, {}, class: "form-control btn btn-info" %>
+            </div>
+
+            <div class="houseEditpage_field">
+              <%= h.text_area :address, autofocus: true, class: "form-control", placeholder: "住所" %>
+            </div>
+
+            <div class="houseEditpage_field">
+              <%= h.number_field :price, min: 1, class: "form-control", placeholder: "賃料（１ヶ月/数字のみ） 例：25000" %>
+            </div>
+
+            <div class="houseEditpage_field">
+              <%= h.text_field :deposit, autofocus: true, class: "form-control", placeholder: "敷金" %>
+            </div>
+
+            <div class="houseEditpage_field">
+              <%= h.text_field :key, autofocus: true, class: "form-control", placeholder: "礼金" %>
+            </div>
+
+            <div class="houseEditpage_field">
+              <%= h.select :construction, House.constructions.keys, {}, class: "form-control btn btn-info" %>
+            </div>
+
+            <div class="houseEditpage_field">
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  契約状況：
+                  <%= h.radio_button :status, "空き", class: "form-check-input", id: "statusRadio1" %>
+                  <label class="form-check-label" for="statusRadio1">空き</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <%= h.radio_button :status, "済み", class: "form-check-input", id: "statusRadio2" %>
+                  <label class="form-check-label" for="statusRadio2">済み</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="houseEditpage_field">
+              <%= h.text_field :comment, autofocus: true, class: "form-control", placeholder: "一言コメント（５０字以内）" %>
+            </div>
+
+            <div class="houseEditpage_field">
+              <%= h.text_area :body, maxlength: "1000", rows: "10", autofocus: true, class: "form-control", placeholder: "物件の説明等（10文字以上1000文字以内）" %>
+            </div>
+
+            <div class="actions">
+              <h3>
+                <%= h.submit "物件情報を更新する", class: "btn btn-success houseEditpage_btn form-control" %>
+              </h3>
+            </div>
+
+          <% end %>
+        </div>
+
+        <h3>
+          <%= link_to "物件を削除する", house_path(@house.id), method: :delete, class: "btn btn-danger houseEditpage_btn2 form-control", "data-confirm" => "【本当にこの物件を削除してもよろしいですか？】" %>
+        </h3>
+      
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</section>

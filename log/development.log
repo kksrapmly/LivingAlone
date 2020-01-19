@@ -19681,3 +19681,2324 @@ Processing by HousesController#edit as HTML
 Completed 200 OK in 431ms (Views: 407.2ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 15:06:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6114ms (ActiveRecord: 7.1ms)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "}": expected "}", was ""
+        on line 159:1 of app/assets/stylesheets/houses.scss
+        from line 24:1 of app/assets/stylesheets/application.scss
+>> }
+   ^
+):
+    4:     <title>LivingAlone</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/houses.scss:159
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___551794855544086872_69820835361680'
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 15:06:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 7339ms (Views: 7304.2ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/statics/lend" for 10.0.2.2 at 2020-01-19 15:06:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#lend as HTML
+  Rendering statics/lend.html.erb within layouts/application
+  Rendered statics/lend.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 444ms (Views: 416.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/houses/new" for 10.0.2.2 at 2020-01-19 15:06:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:29
+  Rendering houses/new.html.erb within layouts/application
+  Rendered houses/new.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_footer.html.erb (9.9ms)
+Completed 200 OK in 513ms (Views: 479.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 15:13:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 509ms (Views: 479.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 15:13:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 496ms (Views: 470.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 15:13:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 672ms (Views: 639.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 15:13:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 593ms (Views: 537.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 15:14:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.8ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 427ms (Views: 391.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/houses/6/confirm" for 10.0.2.2 at 2020-01-19 15:14:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:46
+  Rendered houses/confirm.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 386ms (Views: 359.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 15:14:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 1.2ms)
+
+
+  
+SyntaxError (/vagrant/LivingAlone/app/views/houses/edit.html.erb:33: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/houses/edit.html.erb:33: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 15:14:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 607ms (Views: 579.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 15:19:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 3140ms (Views: 3107.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 15:20:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    17:               <label for="file_photo" class="rounded-circle houseProfileImg">
+    18:                 <div class="houseProfileImg_description">プロフィール画像</div>
+    19:                 <i class="fas fa-camera fa-3x"></i>
+    20:                 <%= h.attachment_field @house, :house_image, fallback: "no_house_image.jpg", id: "file_photo" %>
+    21:               </label>
+    22:             </div>
+    23: 
+  
+app/views/houses/edit.html.erb:20:in `block in _app_views_houses_edit_html_erb__2538880359514516887_69820837280480'
+app/views/houses/edit.html.erb:14:in `_app_views_houses_edit_html_erb__2538880359514516887_69820837280480'
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 15:21:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (2.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (248.3ms)
+Completed 500 Internal Server Error in 334ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `house' for #<#<Class:0x00007f00dc2fdb98>:0x00007f00dd218c18>):
+    17:               <label for="file_photo" class="rounded-circle houseProfileImg">
+    18:                 <div class="houseProfileImg_description">プロフィール画像</div>
+    19:                 <i class="fas fa-camera fa-3x"></i>
+    20:                 <%= h.attachment_field house, :house_image, fallback: "no_house_image.jpg", id: "file_photo" %>
+    21:               </label>
+    22:             </div>
+    23: 
+  
+app/views/houses/edit.html.erb:20:in `block in _app_views_houses_edit_html_erb__2538880359514516887_69820843349700'
+app/views/houses/edit.html.erb:14:in `_app_views_houses_edit_html_erb__2538880359514516887_69820843349700'
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 15:22:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 708ms (Views: 676.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 15:22:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 653ms (Views: 622.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 15:22:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 540ms (Views: 485.2ms | ActiveRecord: 3.5ms)
+
+
+Started PATCH "/users/1" for 10.0.2.2 at 2020-01-19 15:22:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2YrtKlPKvT+RB+9sx2Bbm80/0bcNqG076qXEpXhRGjcAKeUQddilS5Gm7+Uwrqz4f6MOQeS+v5fEYUY9bFiZdw==", "user"=>{"name"=>"てん茶子", "which"=>"貸したい", "sex"=>"女", "prefecture"=>"大阪府", "email"=>"aaaaa@ne", "introduction"=>"よろしくお願いします！！\r\nいい部屋探そう！"}, "commit"=>"プロフィールを更新する", "id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to http://localhost:3000/users/1/confirm
+Completed 302 Found in 14ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 15:22:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (17.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 429ms (Views: 400.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 15:23:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (74.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 577ms (Views: 546.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/houses/6" for 10.0.2.2 at 2020-01-19 15:23:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 605ms (Views: 575.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 15:23:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 450ms (Views: 412.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/houses/6/confirm" for 10.0.2.2 at 2020-01-19 15:24:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:46
+  Rendered houses/confirm.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 405ms (Views: 378.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 15:24:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 383ms (Views: 358.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 15:29:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (0.8ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 619ms (Views: 591.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 15:56:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (2.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 629ms (Views: 597.4ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 15:57:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 536ms (Views: 501.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 15:57:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 475ms (Views: 448.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 15:58:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 540ms (Views: 509.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 15:58:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 651ms (Views: 619.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 15:58:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 777ms (Views: 721.0ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 15:58:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 552ms (Views: 519.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 15:58:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 572ms (Views: 510.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 15:59:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (26.2ms)
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    51:               <label for="file_photo" class="rounded-circle userProfileImg">
+    52:                 <div class="userProfileImg_description">プロフィール画像</div>
+    53:                 <i class="fas fa-camera fa-3x"></i>
+    54:                 <%= f.attachment_field f, :user_image, fallback: "no_image.jpg", id: "file_photo" %>
+    55:               </label>
+    56:             </div>
+    57: 
+  
+app/views/users/edit.html.erb:54:in `block in _app_views_users_edit_html_erb___1055917338335447810_69820847542480'
+app/views/users/edit.html.erb:14:in `_app_views_users_edit_html_erb___1055917338335447810_69820847542480'
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 15:59:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 1.6ms)
+
+
+  
+SyntaxError (/vagrant/LivingAlone/app/views/users/edit.html.erb:54: syntax error, unexpected ':', expecting ')'
+...append=( f.attachment_field f :user_image, fallback: "no_ima...
+...                              ^
+/vagrant/LivingAlone/app/views/users/edit.html.erb:54: syntax error, unexpected ',', expecting ')'
+...mage, fallback: "no_image.jpg", id: "file_photo" );@output_b...
+...                              ^):
+  
+app/views/users/edit.html.erb:54: syntax error, unexpected ':', expecting ')'
+app/views/users/edit.html.erb:54: syntax error, unexpected ',', expecting ')'
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 15:59:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 566ms (Views: 533.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 15:59:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 619ms (Views: 585.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 15:59:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 445ms (Views: 388.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 16:00:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 557ms (Views: 526.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 16:00:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 679ms (Views: 624.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 16:00:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 539ms (Views: 502.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/houses/2/confirm" for 10.0.2.2 at 2020-01-19 16:00:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:46
+  Rendered houses/confirm.html.erb within layouts/application (15.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 382ms (Views: 354.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/houses/2/edit" for 10.0.2.2 at 2020-01-19 16:00:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 399ms (Views: 374.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 16:01:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 406ms (Views: 371.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/houses/6/confirm" for 10.0.2.2 at 2020-01-19 16:01:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:46
+  Rendered houses/confirm.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 399ms (Views: 374.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:01:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 391ms (Views: 365.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:03:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (9.9ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 437ms (Views: 410.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 16:03:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 499ms (Views: 469.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/houses/6/confirm" for 10.0.2.2 at 2020-01-19 16:03:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:46
+  Rendered houses/confirm.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 398ms (Views: 370.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:03:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (5.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 423ms (Views: 371.8ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:05:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 550ms (Views: 520.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:41:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 608ms (Views: 578.4ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:42:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (2.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 600ms (Views: 567.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:43:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 654ms (Views: 626.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:43:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 518ms (Views: 489.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:44:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 559ms (Views: 530.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:45:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 517ms (Views: 487.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:47:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 3790ms (Views: 3762.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:56:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.8ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (10.3ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 6895ms (Views: 6802.7ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 16:56:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 572ms (Views: 537.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/houses/6/confirm" for 10.0.2.2 at 2020-01-19 16:56:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:52
+  Rendered houses/confirm.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 624ms (Views: 597.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:56:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (7.1ms)
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 671ms (Views: 615.4ms | ActiveRecord: 6.1ms)
+
+
+Started PATCH "/houses/6" for 10.0.2.2 at 2020-01-19 16:56:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2HuPTAmG09msa5/7w2HnLr2A1iU5HP0yXEvM/WJBSuu1LwVWj0Jjb09ZIevs+YCwze9PhIO4z4obRA/j222JqQ==", "house"=>{"title"=>"グランフロント６３階", "prefecture"=>"沖縄県", "address"=>"沖縄県名護市のどこか", "price"=>"120000", "deposit"=>"1ヶ月", "key"=>"なし", "construction"=>"鉄筋コンクリート造", "status"=>"空き", "comment"=>"超お値打ち価格", "body"=>"大人気の物件が超お値打ち価格！！今だけです！"}, "commit"=>"物件情報を更新する", "id"=>"6"}
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:50
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[36mHouse Update (5.3ms)[0m  [1m[33mUPDATE "houses" SET "deposit" = ?, "updated_at" = ? WHERE "houses"."id" = ?[0m  [["deposit", "1ヶ月"], ["updated_at", "2020-01-19 16:56:59.878992"], ["id", 6]]
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/houses_controller.rb:51
+Redirected to http://localhost:3000/houses/6/confirm
+Completed 302 Found in 57ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/houses/6/confirm" for 10.0.2.2 at 2020-01-19 16:56:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:52
+  Rendered houses/confirm.html.erb within layouts/application (19.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 629ms (Views: 598.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 16:57:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 363ms (Views: 339.6ms | ActiveRecord: 2.8ms)
+
+
+Started PATCH "/houses/6" for 10.0.2.2 at 2020-01-19 16:57:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g2R2IoTgGKXUxrRMV9CUZsM3pKB0S2ACmfCSIBgA5jjuMPw4AiSoEzf0Clx4SPP4s1g9Ac7vUrre/1E+oSwleg==", "house"=>{"title"=>"グランフロント６３階", "prefecture"=>"沖縄県", "address"=>"沖縄県名護市のどこか", "price"=>"120000", "deposit"=>"1ヶ月", "key"=>"", "construction"=>"鉄筋コンクリート造", "status"=>"空き", "comment"=>"超お値打ち価格", "body"=>"大人気の物件が超お値打ち価格！！今だけです！"}, "commit"=>"物件情報を更新する", "id"=>"6"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:50
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/houses_controller.rb:51
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (7.0ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 446ms (Views: 414.8ms | ActiveRecord: 4.1ms)
+
+
+Started PATCH "/houses/6" for 10.0.2.2 at 2020-01-19 16:57:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rwpupsNU/uNiKtAAG0B8gkWLBWHyLP3Ya286qMUuqRCaSKBajwcY849RVxZ9AyrdsI9icGkn+xgt1to8gPxAuA==", "house"=>{"title"=>"グランフロント６３階", "prefecture"=>"沖縄県", "address"=>"沖縄県名護市のどこか", "price"=>"120000", "deposit"=>"1ヶ月", "key"=>"", "construction"=>"鉄筋コンクリート造", "status"=>"空き", "comment"=>"超お値打ち価格", "body"=>"大人気の物件が超お値打ち価格！！今だけです！"}, "commit"=>"物件情報を更新する", "id"=>"6"}
+  [1m[36mHouse Load (1.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:50
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/houses_controller.rb:51
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 582ms (Views: 565.7ms | ActiveRecord: 4.6ms)
+
+
+Started PATCH "/houses/6" for 10.0.2.2 at 2020-01-19 16:58:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ssIfwvJUuXljCFY01LJ3/ua4htLoWRswYczOP1OHr7qHgNE+vgdfaY5z0SKy8SGhE7zhw3NSHfAndS6rFlVGEg==", "house"=>{"house_image"=>#<ActionDispatch::Http::UploadedFile:0x000055982487a250 @tempfile=#<Tempfile:/tmp/RackMultipart20200119-2364-1dn8zyc.jpg>, @original_filename="desert.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"house[house_image]\"; filename=\"desert.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"グランフロント６３階", "prefecture"=>"沖縄県", "address"=>"沖縄県名護市のどこか", "price"=>"120000", "deposit"=>"1ヶ月", "key"=>"なし", "construction"=>"鉄筋コンクリート造", "status"=>"空き", "comment"=>"超お値打ち価格", "body"=>"大人気の物件が超お値打ち価格！！今だけです！"}, "commit"=>"物件情報を更新する", "id"=>"6"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:50
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[36mHouse Update (3.3ms)[0m  [1m[33mUPDATE "houses" SET "house_image_id" = ?, "updated_at" = ? WHERE "houses"."id" = ?[0m  [["house_image_id", "9b0e83b0291fd5d7546141837aeff4f5345de3fcd143dd5b3fbebac7badb"], ["updated_at", "2020-01-19 16:58:35.253817"], ["id", 6]]
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/houses_controller.rb:51
+Redirected to http://localhost:3000/houses/6/confirm
+Completed 302 Found in 56ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/houses/6/confirm" for 10.0.2.2 at 2020-01-19 16:58:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:52
+  Rendered houses/confirm.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 428ms (Views: 402.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/attachments/0793e394996d964f9141d9e0f5f98aeb74099d7e/store/9b0e83b0291fd5d7546141837aeff4f5345de3fcd143dd5b3fbebac7badb/house_image" for 10.0.2.2 at 2020-01-19 16:58:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-01-19 16:58:35 +0000] GET "/0793e394996d964f9141d9e0f5f98aeb74099d7e/store/9b0e83b0291fd5d7546141837aeff4f5345de3fcd143dd5b3fbebac7badb/house_image" 200 30.0ms
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 16:58:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 387ms (Views: 356.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2020-01-19 16:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (26.4ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 409ms (Views: 383.5ms | ActiveRecord: 2.8ms)
+
+
+Started PATCH "/users/1" for 10.0.2.2 at 2020-01-19 16:59:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZL/85F8f+qNgJQwj4t45zXUzm+DfSGjjAXLybUmh88W9HPTeeQ3i12CEDKoVEM6ux69EFjZeuk8vtnD1XahwhQ==", "user"=>{"name"=>"てん茶子", "which"=>"貸したい", "sex"=>"女", "prefecture"=>"大阪府", "user_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fa8815acb80 @tempfile=#<Tempfile:/tmp/RackMultipart20200119-2364-l7wuzk.jpg>, @original_filename="japan.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[user_image]\"; filename=\"japan.jpg\"\r\nContent-Type: image/jpeg\r\n">, "email"=>"aaaaa@ne", "introduction"=>"よろしくお願いします！！\r\nいい部屋探そう！"}, "commit"=>"プロフィールを更新する", "id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Update (4.7ms)[0m  [1m[33mUPDATE "users" SET "user_image_id" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["user_image_id", "f563feac13c5b4a093364deb065f13c510d01ceb444744cd9a1f9593174b"], ["updated_at", "2020-01-19 16:59:03.294609"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to http://localhost:3000/users/1/confirm
+Completed 302 Found in 37ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 16:59:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 421ms (Views: 388.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/attachments/62f589e3f787994089fe2c91fdd10c6ac0c892b8/store/f563feac13c5b4a093364deb065f13c510d01ceb444744cd9a1f9593174b/user_image" for 10.0.2.2 at 2020-01-19 16:59:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-01-19 16:59:03 +0000] GET "/62f589e3f787994089fe2c91fdd10c6ac0c892b8/store/f563feac13c5b4a093364deb065f13c510d01ceb444744cd9a1f9593174b/user_image" 200 10.1ms
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 16:59:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (1.8ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (31.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 410ms (Views: 380.5ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 16:59:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 427ms (Views: 389.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/houses/6/confirm" for 10.0.2.2 at 2020-01-19 16:59:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:52
+  Rendered houses/confirm.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 376ms (Views: 351.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 16:59:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 413ms (Views: 375.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 16:59:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 376ms (Views: 345.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 16:59:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (31.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 452ms (Views: 410.4ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/houses/6" for 10.0.2.2 at 2020-01-19 16:59:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 379ms (Views: 350.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 16:59:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (28.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 414ms (Views: 371.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/houses/4" for 10.0.2.2 at 2020-01-19 16:59:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 467ms (Views: 436.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/houses/4" for 10.0.2.2 at 2020-01-19 17:02:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 5819ms (Views: 5788.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/houses/4" for 10.0.2.2 at 2020-01-19 17:03:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 521ms (Views: 487.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/houses/4" for 10.0.2.2 at 2020-01-19 17:04:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 550ms (Views: 514.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/houses/4" for 10.0.2.2 at 2020-01-19 17:06:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 638ms (Views: 605.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/houses/4" for 10.0.2.2 at 2020-01-19 17:07:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (8.3ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 544ms (Views: 508.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/2" for 10.0.2.2 at 2020-01-19 17:07:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 601ms (Views: 579.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 17:11:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (22.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 471ms (Views: 441.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/houses/6/confirm" for 10.0.2.2 at 2020-01-19 17:12:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:52
+  Rendered houses/confirm.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 589ms (Views: 564.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 17:12:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (12.5ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 595ms (Views: 568.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 17:12:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (5.3ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 3053ms (Views: 3024.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 17:13:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.7ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 3262ms (Views: 3234.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/houses/6/edit" for 10.0.2.2 at 2020-01-19 17:16:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (1.7ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (11.1ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 6777ms (Views: 6682.8ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 17:16:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (2.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (62.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 713ms (Views: 659.4ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/houses/1" for 10.0.2.2 at 2020-01-19 17:16:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (13.7ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 422ms (Views: 392.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 17:16:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 464ms (Views: 437.6ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/houses/2/confirm" for 10.0.2.2 at 2020-01-19 17:17:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:52
+  Rendered houses/confirm.html.erb within layouts/application (16.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 404ms (Views: 378.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/houses/2/edit" for 10.0.2.2 at 2020-01-19 17:17:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (5.5ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 407ms (Views: 381.7ms | ActiveRecord: 2.4ms)
+
+
+Started PATCH "/houses/2" for 10.0.2.2 at 2020-01-19 17:17:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MqW0yAnmat+isPCKBpmX0w7VsyRE1Uqv+nPb5DQeN0LbxKtLPdqG5lDjm6YE4/Npqz8syWN/0tQh5uy9iJWlYQ==", "house"=>{"house_image"=>#<ActionDispatch::Http::UploadedFile:0x00005612970c40e0 @tempfile=#<Tempfile:/tmp/RackMultipart20200119-2435-xt4hb5.jpg>, @original_filename="road.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"house[house_image]\"; filename=\"road.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"てスト2", "prefecture"=>"北海道", "address"=>"テスト２", "price"=>"60000", "deposit"=>"てすと２", "key"=>"てしと２", "construction"=>"木造", "status"=>"済み", "comment"=>"てすと２", "body"=>"テストのための投稿です。"}, "commit"=>"物件情報を更新する", "id"=>"2"}
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:50
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[36mHouse Update (3.1ms)[0m  [1m[33mUPDATE "houses" SET "house_image_id" = ?, "status" = ?, "updated_at" = ? WHERE "houses"."id" = ?[0m  [["house_image_id", "3cb4c01dbfb4df88a6a30e1979064f85ea002adef73708f8e128f54cb5d5"], ["status", 1], ["updated_at", "2020-01-19 17:17:22.115915"], ["id", 2]]
+  ↳ app/controllers/houses_controller.rb:51
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/houses_controller.rb:51
+Redirected to http://localhost:3000/houses/2/confirm
+Completed 302 Found in 51ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/houses/2/confirm" for 10.0.2.2 at 2020-01-19 17:17:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:52
+  Rendered houses/confirm.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 398ms (Views: 373.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/attachments/31a86b069b834b0aa705d246243234973e4242b3/store/3cb4c01dbfb4df88a6a30e1979064f85ea002adef73708f8e128f54cb5d5/house_image" for 10.0.2.2 at 2020-01-19 17:17:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-01-19 17:17:22 +0000] GET "/31a86b069b834b0aa705d246243234973e4242b3/store/3cb4c01dbfb4df88a6a30e1979064f85ea002adef73708f8e128f54cb5d5/house_image" 200 34.6ms
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 17:17:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 402ms (Views: 373.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 17:17:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (30.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 530ms (Views: 499.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/houses/2" for 10.0.2.2 at 2020-01-19 17:17:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 398ms (Views: 367.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/statics/lend" for 10.0.2.2 at 2020-01-19 17:17:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#lend as HTML
+  Rendering statics/lend.html.erb within layouts/application
+  Rendered statics/lend.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 387ms (Views: 363.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 17:17:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (1.9ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (32.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 441ms (Views: 399.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/houses/2" for 10.0.2.2 at 2020-01-19 17:17:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (4.6ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 393ms (Views: 352.4ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 17:17:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (30.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 407ms (Views: 366.6ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/houses/2" for 10.0.2.2 at 2020-01-19 17:17:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.8ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 402ms (Views: 362.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 17:18:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 446ms (Views: 406.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/houses/2/confirm" for 10.0.2.2 at 2020-01-19 17:18:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.8ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:52
+  Rendered houses/confirm.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 614ms (Views: 566.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/houses/2/edit" for 10.0.2.2 at 2020-01-19 17:18:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 387ms (Views: 360.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/houses/2/edit" for 10.0.2.2 at 2020-01-19 17:18:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 550ms (Views: 521.1ms | ActiveRecord: 3.3ms)
+
+
+Started DELETE "/houses/2" for 10.0.2.2 at 2020-01-19 17:19:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for HousesController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.8) lib/rack/etag.rb:25:in `call'
+rack (2.0.8) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.8) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.8) lib/rack/session/abstract/id.rb:259:in `context'
+rack (2.0.8) lib/rack/session/abstract/id.rb:253:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/houses/2" for 10.0.2.2 at 2020-01-19 17:19:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.7ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 3289ms (Views: 3166.1ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 17:19:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (30.7ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 694ms (Views: 664.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 17:19:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (19.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 673ms (Views: 639.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/houses/2/confirm" for 10.0.2.2 at 2020-01-19 17:19:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:52
+  Rendered houses/confirm.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 640ms (Views: 615.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/houses/2/edit" for 10.0.2.2 at 2020-01-19 17:20:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (15.3ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 526ms (Views: 498.5ms | ActiveRecord: 3.4ms)
+
+
+Started DELETE "/houses/2" for 10.0.2.2 at 2020-01-19 17:20:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ewHa78D7L6rMUufAw4bJX5eAc801V0fzbh0M+qkC9o9OQxQTjKjJuiEpYNalxZ8AYoQU3K5cQTMopOxu7NAfJw==", "id"=>"2"}
+  [1m[36mHouse Load (2.6ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:60
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/houses_controller.rb:61
+  [1m[36mHouse Destroy (5.8ms)[0m  [1m[31mDELETE FROM "houses" WHERE "houses"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/houses_controller.rb:61
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/houses_controller.rb:61
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 13.4ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/houses_controller.rb:62:in `destroy'
+Started GET "/houses/2" for 10.0.2.2 at 2020-01-19 17:23:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.9ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+Completed 404 Not Found in 42ms (ActiveRecord: 7.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find House with 'id'=2):
+  
+app/controllers/houses_controller.rb:19:in `show'
+Started GET "/houses/2" for 10.0.2.2 at 2020-01-19 17:24:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+Completed 404 Not Found in 36ms (ActiveRecord: 8.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find House with 'id'=2):
+  
+app/controllers/houses_controller.rb:19:in `show'
+Started GET "/houses/2" for 10.0.2.2 at 2020-01-19 17:25:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+Completed 404 Not Found in 4ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find House with 'id'=2):
+  
+app/controllers/houses_controller.rb:19:in `show'
+Started GET "/houses/2" for 10.0.2.2 at 2020-01-19 17:25:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+Completed 404 Not Found in 40ms (ActiveRecord: 8.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find House with 'id'=2):
+  
+app/controllers/houses_controller.rb:19:in `show'
+Started GET "/houses/new" for 10.0.2.2 at 2020-01-19 17:26:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#new as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:29
+  Rendering houses/new.html.erb within layouts/application
+  Rendered houses/new.html.erb within layouts/application (10.8ms)
+Started GET "/houses/" for 10.0.2.2 at 2020-01-19 17:26:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (2.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (1886.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 3769ms (Views: 3571.4ms | ActiveRecord: 20.7ms)
+
+
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 3237ms (Views: 3185.2ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/houses/6" for 10.0.2.2 at 2020-01-19 17:26:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mHouse Load (2.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 466ms (Views: 436.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 17:26:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (29.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 602ms (Views: 576.1ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 17:26:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.6ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 635ms (Views: 602.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/statics/lend" for 10.0.2.2 at 2020-01-19 17:28:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#lend as HTML
+  Rendering statics/lend.html.erb within layouts/application
+  Rendered statics/lend.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 3398ms (Views: 3356.1ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/houses/new" for 10.0.2.2 at 2020-01-19 17:28:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:29
+  Rendering houses/new.html.erb within layouts/application
+  Rendered houses/new.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 477ms (Views: 406.6ms | ActiveRecord: 7.7ms)
+
+
+Started POST "/houses" for 10.0.2.2 at 2020-01-19 17:29:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wz96ZiO0xdDGEkqxM18cYBQ5mbNyPloHgs7Blk8xsni8aijOkuIRvkjgpNSQTLovzR7kNUyybAne+M03x7RmlQ==", "house"=>{"title"=>"wwwww", "prefecture"=>"青森県", "address"=>"wwwwwwwwwwwwww", "price"=>"50000", "deposit"=>"www", "key"=>"www", "construction"=>"鉄筋コンクリート造", "status"=>"空き", "comment"=>"wwwww", "body"=>"wwwwwwwwwwwwwwwww"}, "commit"=>"物件を登録する"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/houses_controller.rb:37
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:37
+  [1m[36mHouse Create (5.4ms)[0m  [1m[32mINSERT INTO "houses" ("title", "address", "deposit", "key", "comment", "body", "user_id", "prefecture", "price", "construction", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "wwwww"], ["address", "wwwwwwwwwwwwww"], ["deposit", "www"], ["key", "www"], ["comment", "wwwww"], ["body", "wwwwwwwwwwwwwwwww"], ["user_id", 1], ["prefecture", 2], ["price", 50000], ["construction", 1], ["created_at", "2020-01-19 17:29:10.711160"], ["updated_at", "2020-01-19 17:29:10.711160"]]
+  ↳ app/controllers/houses_controller.rb:37
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/houses_controller.rb:37
+Redirected to http://localhost:3000/houses
+Completed 302 Found in 56ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 17:29:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (64.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 534ms (Views: 500.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/houses/7" for 10.0.2.2 at 2020-01-19 17:29:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:19
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:20
+  Rendering houses/show.html.erb within layouts/application
+  Rendered houses/show.html.erb within layouts/application (12.6ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 383ms (Views: 353.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-01-19 17:29:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 399ms (Views: 377.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 17:29:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 384ms (Views: 348.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/houses/7/confirm" for 10.0.2.2 at 2020-01-19 17:29:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#confirm as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mHouse Load (1.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:24
+  Rendering houses/confirm.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/confirm.html.erb:52
+  Rendered houses/confirm.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 395ms (Views: 369.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/houses/7/edit" for 10.0.2.2 at 2020-01-19 17:29:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:46
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/edit.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 505ms (Views: 478.9ms | ActiveRecord: 2.9ms)
+
+
+Started DELETE "/houses/7" for 10.0.2.2 at 2020-01-19 17:29:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fAD7BFvy9hNG3GrGfB0Ponf3momti/rRUS0pZlrrQGZJQjX4F6EQA6un7dAaXln9gvP9mDaA/BEXlMnyHzmpzg==", "id"=>"7"}
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:60
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/houses_controller.rb:61
+  [1m[36mHouse Destroy (4.2ms)[0m  [1m[31mDELETE FROM "houses" WHERE "houses"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/houses_controller.rb:61
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/houses_controller.rb:61
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:62
+Redirected to http://localhost:3000/users/1/confirm
+Completed 302 Found in 27ms (ActiveRecord: 12.5ms)
+
+
+Started GET "/users/1/confirm" for 10.0.2.2 at 2020-01-19 17:29:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/confirm.html.erb within layouts/application
+  [1m[36mHouse Load (1.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses" WHERE "houses"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/confirm.html.erb:52
+  Rendered users/confirm.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 406ms (Views: 375.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/houses" for 10.0.2.2 at 2020-01-19 17:29:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HousesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/houses_controller.rb:7
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (1.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" ORDER BY "houses"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/houses/index.html.erb:20
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/houses/index.html.erb:47
+  Rendered houses/index.html.erb within layouts/application (27.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 412ms (Views: 382.7ms | ActiveRecord: 5.7ms)
+
+
