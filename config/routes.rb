@@ -23,4 +23,6 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :relationships, only:[:show, :new, :create]
+
 end
