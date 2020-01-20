@@ -7,6 +7,9 @@ class User < ApplicationRecord
   
   has_many :houses, dependent: :destroy
 
+  has_many :active_relationships, class_name: "Relationship", foreign_key: "follower_id", dependent: :destroy
+  has_many :followed, through: :active_relationships
+
   attachment :user_image
 
   enum which: { "借りる": 0, "貸したい": 1 }
