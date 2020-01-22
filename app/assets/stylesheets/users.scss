@@ -13,6 +13,12 @@
     border-radius: 50%;
     overflow: hidden;
   }
+  &_info {
+    text-align: right;
+    a {
+      color: coral;
+    }
+  }
   &_line {
     margin-top: 20px;
     border: 1px solid gray;
@@ -59,6 +65,14 @@
     color: white;
     margin-bottom: 20px;
   }
+  &_btn4 {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+  }
 }
 
 
@@ -90,3 +104,6 @@
     color: white;
   }
 }
+
+
+// users/_info

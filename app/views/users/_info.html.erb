@@ -1,0 +1,12 @@
+<% @user || current_user %>
+<div class="userInfo">
+  <%= link_to "いいねしている", following_user_path(@user) %>
+  <strong id="userFollowing" class="info">
+    <%= @user.following.count %>
+  </strong>  |
+
+  <%= link_to "いいねされた", followers_user_path(@user) %>
+  <strong id="userFollowers" class="info">
+    <%= @user.followers.count %>
+  </strong>
+</div>

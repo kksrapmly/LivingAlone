@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   
   resources :users, only:[:show, :edit, :update, :destroy] do
     member do
-      get :confirm
+      get :confirm, :following, :followers
     end
   end
 
