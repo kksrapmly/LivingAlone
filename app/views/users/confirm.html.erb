@@ -5,8 +5,12 @@
         <div class="userConfirmpage_img text-center">
           <%= attachment_image_tag @user, :user_image, fallback: "no_image.jpg", size: "200x200" %>
         </div>
+
+        <div class="userConfirmpage_info">
+          <%= render 'users/info' %>
+        </div>
         <hr class="divider light my-4">
-        
+       
         <% if flash[:notice] %>
           <p class="alertmessage">
             <%= flash[:notice] %>

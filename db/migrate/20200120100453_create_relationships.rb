@@ -3,7 +3,6 @@ class CreateRelationships < ActiveRecord::Migration[5.2]
     create_table :relationships do |t|
       t.integer :followed_id
       t.integer :follower_id
-      t.integer :status, null: false
 
       t.timestamps null: false
     end

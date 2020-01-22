@@ -5,10 +5,6 @@
         <div class="userConfirmpage_img text-center">
           <%= attachment_image_tag @user, :user_image, fallback: "no_image.jpg", size: "200x200" %>
         </div>
-
-        <div class="userConfirmpage_info">
-          <%= render 'users/info' %>
-        </div>
         <hr class="divider light my-4">
         
         <% if flash[:notice] %>
@@ -42,16 +38,7 @@
         <hr class="divider light my-4">
 
         <% if user_signed_in? && current_user.id != @user.id %>
-          <% unless current_user == @user %>
-            <% if current_user.following?(@user) %>
-              <h3 class="text-center">いいね済み</h3>
-            <% else %>
-              <%= form_with(model: current_user.active_relationships.new, local: true, remote: true) do |like| %>
-                <%= hidden_field_tag :followed_id, @user.id %> 
-                <%= like.submit "いいね", class: "btn btn-primary userConfirmpage_btn4 form-control" %>
-              <% end %>
-            <% end %>
-          <% end%>
+          <%= render 'users/follow_form' %>
         <% end %>
 
       </div>

@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
 
+
+  PER = 10
+
  
   def show
     @user = User.find(params[:id])
@@ -9,6 +12,16 @@ class UsersController < ApplicationController
   def confirm
     @user = User.find(params[:id])
     @house = House.where(user_id: current_user)
+  end
+
+  def following
+    @user = User.find(params[:id])
+    @users = @user.following.page(params[:page]).per(PER).reverse_order
+  end
+
+  def followers
+    @user = User.find(params[:id])
+    @users = @user.followers.page(params[:page]).per(PER).reverse_order
   end
 
   def edit
