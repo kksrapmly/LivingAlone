@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   
-  resources :users, only:[:show, :edit, :update, :destroy, :confirm, :followers, :following] do
+  resources :users, only:[:show, :edit, :update, :destroy, :confirm, :followers, :following, :matching] do
     member do
-      get :confirm, :following, :followers
+      get :confirm, :following, :followers, :matching
     end
   end
 

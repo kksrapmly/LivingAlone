@@ -24,6 +24,12 @@ class UsersController < ApplicationController
     @users = @user.followers.page(params[:page]).per(PER).reverse_order
   end
 
+  def matching
+    @user = User.find(params[:id])
+    @users = current_user.matching
+    # @users = @user.matching.page(params[:page]).per(PER).reverse_order
+  end
+
   def edit
     @user = User.find(params[:id])
   end
