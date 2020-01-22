@@ -1,1 +1,34 @@
-ppp
+<section class="userFollowpage">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <h2 class="userFollowpage_title">いいねしている相手</h2>
+
+        <table class="table table-striped">
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <% @users.each do |user| %>
+            <tr>
+              <td><%= attachment_image_tag user, :user_image, fallback: "no_image.jpg", size: "50x50" %></td>
+              <td><%= user.name %></td>
+              <td><%= link_to "詳細", user_path(user.id), class: "btn btn-sm userFollowpage_btn" %></td>
+            </tr>
+          <% end %>
+        </table>
+
+        <h3 class="text-center">
+          <%= paginate @users %>
+        </h3>
+      
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</section>

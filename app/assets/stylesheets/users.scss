@@ -106,4 +106,19 @@
 }
 
 
-// users/_info
+// users/following、/followers
+.userFollowpage {
+  background: linear-gradient(#70e1f5, #ffd194);
+  overflow: hidden;
+  &_title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    background-color: black;
+  }
+  &_btn {
+    background: coral;
+    color: white;
+  }
+}

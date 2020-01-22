@@ -1,5 +1,5 @@
-$(".userConfirmpage_btn4").html(`<div class="btn btn-lg btn-default form-control">いいね済み</div>`)
+$("#follow_form").html("<%= escape_javascript(render('users/unfollow')) %>");
+$("#followers").html('<%= @user.followers.count %>');
 
-  //   $(this)
-  // }
-  //   
+$("#follow_form").html("<%= escape_javascript(render('users/follow')) %>");
+$("#followers").html('<%= @user.followers.count %>');
