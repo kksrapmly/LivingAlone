@@ -40,6 +40,10 @@ class User < ApplicationRecord
     following.include?(other_user)
   end
 
+  def followers?(other_user)
+    followers.include?(other_user)
+  end
+
   # フォローする
   def follow(other_user)
     following << other_user
