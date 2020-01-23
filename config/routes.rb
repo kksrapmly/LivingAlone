@@ -23,6 +23,9 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :relationships, only:[:new, :create, :destroy]
+  resources :relationships, only:[:create, :destroy]
+
+  resources :chats, only:[:show, :create]
+
 
 end
