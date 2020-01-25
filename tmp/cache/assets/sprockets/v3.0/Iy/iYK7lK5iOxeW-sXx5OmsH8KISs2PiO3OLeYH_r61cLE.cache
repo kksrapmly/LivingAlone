@@ -1,0 +1,14 @@
+I"õ(function() {
+  ({
+    received: function(data) {
+      return alert(data['conversation']);
+    },
+    speak: function(conversation) {
+      return this.perform('speak', {
+        conversation: conversation
+      });
+    }
+  });
+
+}).call(this);
+:ET
