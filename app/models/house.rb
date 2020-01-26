@@ -1,7 +1,7 @@
 class House < ApplicationRecord
 
 
-  has_many :messages
+  # has_many :messages
 
   belongs_to :user
 

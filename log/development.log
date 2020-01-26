@@ -39098,3 +39098,153 @@ Migrating to CreateMessages (20200126090315)
   ↳ bin/rails:9
   [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/chats/1" for 10.0.2.2 at 2020-01-26 09:23:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ChatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering chats/show.html.erb within layouts/application
+  Rendered chats/show.html.erb within layouts/application (1.2ms)
+Started GET "/chats/1" for 10.0.2.2 at 2020-01-26 09:23:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering chats/show.html.erb within layouts/application
+  Rendered chats/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 18032ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___3425824554514474670_47020803560380'
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 18370ms (Views: 18337.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics/about" for 10.0.2.2 at 2020-01-26 09:24:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#about as HTML
+  Rendering statics/about.html.erb within layouts/application
+  Rendered statics/about.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 3690ms (Views: 3667.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics/about" for 10.0.2.2 at 2020-01-26 09:25:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#about as HTML
+  Rendering statics/about.html.erb within layouts/application
+  Rendered statics/about.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 624ms (Views: 591.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statics/about" for 10.0.2.2 at 2020-01-26 09:25:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#about as HTML
+  Rendering statics/about.html.erb within layouts/application
+  Rendered statics/about.html.erb within layouts/application (2.7ms)
+Started GET "/statics/lend" for 10.0.2.2 at 2020-01-26 09:25:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#lend as HTML
+  Rendering statics/lend.html.erb within layouts/application
+  Rendered statics/lend.html.erb within layouts/application (1.0ms)
+Started GET "/" for 10.0.2.2 at 2020-01-26 09:25:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#top as HTML
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1945ms (Views: 1896.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chats/1" for 10.0.2.2 at 2020-01-26 09:25:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering chats/show.html.erb within layouts/application
+  Rendered chats/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 2140ms (Views: 2042.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1695ms (Views: 1659.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 943ms (Views: 863.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chats/1" for 10.0.2.2 at 2020-01-26 09:25:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering chats/show.html.erb within layouts/application
+  Rendered chats/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 671ms (Views: 636.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chats/1" for 10.0.2.2 at 2020-01-26 09:25:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering chats/show.html.erb within layouts/application
+  Rendered chats/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 3674ms (Views: 3648.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHouse Load (1.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (6.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Hello World"], ["house_id", 1], ["created_at", "2020-01-26 09:35:15.579295"], ["updated_at", "2020-01-26 09:35:15.579295"]]
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/chats/1" for 10.0.2.2 at 2020-01-26 09:36:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ChatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering chats/show.html.erb within layouts/application
+  [1m[36mMessage Load (2.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chats/show.html.erb:10
+  Rendered collection of messages/_message.html.erb [1 times] (0.5ms)
+  Rendered chats/show.html.erb within layouts/application (62.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 8332ms (Views: 8240.0ms | ActiveRecord: 12.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (8.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "house_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "こんにちは"], ["house_id", 1], ["created_at", "2020-01-26 09:37:48.536100"], ["updated_at", "2020-01-26 09:37:48.536100"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/chats/1" for 10.0.2.2 at 2020-01-26 09:38:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ChatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering chats/show.html.erb within layouts/application
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chats/show.html.erb:10
+  Rendered collection of messages/_message.html.erb [2 times] (0.5ms)
+  Rendered chats/show.html.erb within layouts/application (39.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 2912ms (Views: 2869.1ms | ActiveRecord: 6.2ms)
+
+
