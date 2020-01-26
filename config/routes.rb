@@ -25,7 +25,11 @@ Rails.application.routes.draw do
 
   resources :relationships, only:[:create, :destroy]
 
-  resources :chats, only:[:show]
+  resources :chats, only:[:show] do
+    collection do
+      get :show
+    end
+  end
 
   mount ActionCable.server => '/cable'
 

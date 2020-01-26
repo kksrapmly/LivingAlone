@@ -7,11 +7,17 @@
 .chatShowpage {
   background: linear-gradient(#70e1f5, #ffd194);
   overflow: hidden;
-  &_title {
+  &_content {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
-    color: white;
-    background-color: black;
+  }
+  &_form {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &_message {
+    border-top: 1px solid gray;
+    text-align: center;
   }
 }

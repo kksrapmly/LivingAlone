@@ -1,7 +1,7 @@
 class Message < ApplicationRecord
 
 
-  # belongs_to :house
+  after_create_commit { MessageBroadcastJob.perform_later self }
 
 
 end
