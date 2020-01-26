@@ -1,6 +1,8 @@
 class House < ApplicationRecord
 
 
+  has_many :messages
+
   belongs_to :user
 
   attachment :house_image
