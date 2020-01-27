@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_26_090315) do
+ActiveRecord::Schema.define(version: 2020_01_27_095821) do
 
   create_table "houses", force: :cascade do |t|
     t.string "title", limit: 100, default: "", null: false
@@ -44,6 +44,24 @@ ActiveRecord::Schema.define(version: 2020_01_26_090315) do
     t.index ["followed_id"], name: "index_relationships_on_followed_id"
     t.index ["follower_id", "followed_id"], name: "index_relationships_on_follower_id_and_followed_id", unique: true
     t.index ["follower_id"], name: "index_relationships_on_follower_id"
+  end
+
+  create_table "rooms", force: :cascade do |t|
+    t.integer "to_id"
+    t.integer "from_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["from_id"], name: "index_rooms_on_from_id"
+    t.index ["to_id", "from_id"], name: "index_rooms_on_to_id_and_from_id", unique: true
+    t.index ["to_id"], name: "index_rooms_on_to_id"
+  end
+
+  create_table "talks", force: :cascade do |t|
+    t.text "conversation"
+    t.integer "room_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
