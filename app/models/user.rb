@@ -42,8 +42,14 @@ class User < ApplicationRecord
     following.include?(other_user)
   end
 
+  # フォローされているか確認
   def followers?(other_user)
     followers.include?(other_user)
+  end
+
+  # マッチングしているか確認
+  def matching?(other_user)
+    matching.include?(other_user)
   end
 
   # フォローする

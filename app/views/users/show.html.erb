@@ -41,6 +41,10 @@
           <%= render 'users/follow_form' %>
         <% end %>
 
+        <% if user_signed_in? && current_user.matching?(@user) %>
+          <%= link_to "メッセージを送る", rooms_path(to_id: current_user.id, from_id: @user.id), method: :post, class: "btn userConfirmpage_btn5" %>
+        <% end %>
+
       </div>
     </div>
   </div>
