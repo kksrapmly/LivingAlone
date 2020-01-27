@@ -31,6 +31,10 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :rooms, only:[:index, :create] do
+    resources :talks, only:[:index, :create]
+  end
+
   mount ActionCable.server => '/cable'
 
 
